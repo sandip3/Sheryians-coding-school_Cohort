@@ -1,0 +1,135 @@
+@import url('https: //fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+/* universal sign  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+}
+
+html,
+body {
+    font-size: 16px;
+}
+
+body {
+    margin: 50px;
+}
+
+main {
+    background: rgb(245, 245, 245);
+    margin: 10px 0;
+}
+
+.title {
+    padding: 20px 0;
+}
+
+main nav {
+
+    & .Nav {
+        background-color: rgb(0, 162, 255);
+        text-align: center;
+        padding: 15px;
+        margin-bottom: 15px;
+    }
+
+    & a {
+        margin: 0 10px;
+        color: white;
+        font-size: 1.1rem;
+        font-weight: 700;
+        text-decoration: none;
+
+        &:hover {
+            color: rgb(217, 253, 248);
+            text-decoration: underline;
+        }
+
+    }
+}
+
+hr {
+    border: 1px solid rgb(172, 172, 172);
+    margin: 15px 0;
+}
+
+main .Content {
+    background: white;
+    border: 1px solid rgb(194, 194, 194);
+    border-radius: 5px;
+    padding: 10px;
+
+    & p {
+        margin: 15px;
+    }
+
+    & img {
+        width: 400px;
+        border-radius: 10px;
+    }
+
+    & h3 {
+        margin: 15px;
+    }
+
+    & ul {
+        margin: 5px;
+        background: rgb(237, 248, 229);
+        border: 1px solid gainsboro;
+        border-radius: 10px;
+        padding: 10px 20px;
+
+
+        & li {
+            padding: 3px;
+        }
+    }
+}
+
+footer {
+    background: black;
+    color: white;
+    text-align: center;
+    font-weight: 700;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+form {
+    background: white;
+    padding: 10px;
+    border: 2px solid gainsboro;
+    border-radius: 10px;
+    line-height: 25px;
+    
+
+    & label {
+        font-size: 20px;
+    }
+
+    & input,
+    & textarea {
+        width: 500px;
+        margin-bottom: 15px;
+        padding: 7px;
+        font-size: 18px;
+
+        &:focus {
+            background: lightgoldenrodyellow;
+        }
+
+        &:user-valid {
+            background: lightgreen;
+            border: 2px solid lightcyan;
+        }
+
+        &:invalid {
+            background: lightcoral;
+            border-color: red;
+        }
+
+    }
+
+}

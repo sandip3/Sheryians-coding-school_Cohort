@@ -3,8 +3,9 @@
 ## Assignment 1: Blog Website
 
 **🚀 Technology Used:** HTML  
-**🌐 Live Demo:** [View the Live Website](https://sandip-cohort.netlify.app/day%203/)  
-**📂 Source Code:** [GitHub Repository](https://github.com/sandip3/Sheryians-coding-school_Cohort)
+- **🌐 Live Demo (Netlify):** [View the Live Website (Netlify)](https://sandip-cohort.netlify.app/day%203/)  
+- **🌐 Live Demo (GitHub):** [View the Live Website (GitHub Pages)](https://sandip3.github.io/Sheryians-coding-school_Cohort/Day%203/)  
+- **📂 Source Code (GitHub):** [GitHub Repository](https://github.com/sandip3/Sheryians-coding-school_Cohort)
 
 **🖼️ Project Preview:**
 
@@ -23,15 +24,16 @@
 
 **🙏 Acknowledgments:**
 
-Special thanks to Harsh Vandana Sharma Sir for his continued guidance and support throughout this assignment.
+Special thanks to **Harsh Vandana Sharma Sir** for his continued guidance and support throughout this assignment.
 
 ---
 
 ## Assignment 2: About & Contact Us Page
 
 **🚀 Technology Used:** HTML  
-**🌐 Live Demo:** [View Website](https://sandip3.github.io/Sheryians-coding-school_Cohort/Day%203/)  
-**📂 Source Code:** [GitHub Repository](https://github.com/sandip3/Sheryians-coding-school_Cohort)
+- **🌐 Live Demo (Netlify):** [View Website (Netlify)](https://sandip-cohort.netlify.app/day%203/)  
+- **🌐 Live Demo (GitHub):** [View Website (GitHub Pages)](https://sandip3.github.io/Sheryians-coding-school_Cohort/Day%203/)  
+- **📂 Source Code (GitHub):** [GitHub Repository](https://github.com/sandip3/Sheryians-coding-school_Cohort)
 
 **🖼️ Project Preview:**
 
@@ -48,6 +50,34 @@ Special thanks to Harsh Vandana Sharma Sir for his continued guidance and suppor
 
 **🙏 Acknowledgments:**
 
-Thanks to Harsh Vandana Sharma Sir for the guidance.
+Thanks to **Harsh Vandana Sharma Sir** for the guidance.
+
+---
+
+## Assignment 3: Blog Website with CSS Styling
+
+**🚀 Technology Used:** HTML, CSS  
+- **🌐 Live Demo (Netlify):** [View the Live Website (Netlify)](https://sandip-cohort.netlify.app/day%203/)  
+- **🌐 Live Demo (GitHub):** [View the Live Website (GitHub Pages)](https://sandip3.github.io/Sheryians-coding-school_Cohort/Day%203/)  
+- **📂 Source Code (GitHub):** [GitHub Repository](https://github.com/sandip3/Sheryians-coding-school_Cohort)
+
+**🖼️ Project Preview:**
+
+![Blog Website with CSS Preview](../public/Day%204.gif)
+
+**📝 Assignment Overview:**
+
+- Applied CSS to the Blog Website to enhance the visual appearance and structure.
+- Styled the headings, paragraphs, links, buttons, and images to create a more modern and visually appealing layout.
+- Organized the page using various CSS properties, such as margins, padding, and borders.
+
+**📚 Key Learnings:**
+
+- Gained hands-on experience with styling using CSS.
+- Improved skills in customizing the design of HTML components.
+
+**🙏 Acknowledgments:**
+
+Thanks to **Harsh Vandana Sharma Sir** for his consistent guidance and feedback throughout this assignment.
 
 ---
