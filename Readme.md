@@ -45,7 +45,7 @@ For more details, please refer to the [Assignment 2 README](./Day%203/Readme.md#
 ![Blog Website Preview](./public/Day%204.gif)
 
 
-For more details, please refer to the [Assignment 2 README](./Day%203/Readme.md#assignment-3-blog-website-with-css-styling).
+For more details, please refer to the [Assignment 3 README](./Day%203/Readme.md#assignment-3-blog-website-with-css-styling).
 
 ---
 
@@ -61,6 +61,6 @@ For more details, please refer to the [Assignment 2 README](./Day%203/Readme.md#
 ![Blog Website Preview](./public/Day%205.gif)
 
 
-For more details, please refer to the [Assignment 2 README](./Day%203/Readme.md#assignment-3-blog-website-with-css-styling).
+For more details, please refer to the [Assignment 4 README](./Day%205/Readme.md#assignment-4-coffee-shop-static-page).
 
 ---
