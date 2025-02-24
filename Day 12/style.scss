@@ -1,0 +1,133 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    main {
+        padding: 1rem;
+
+        .Hero {
+            padding-bottom: 5rem;
+            position: relative;
+
+            .hero-left {
+                h2 {
+                    font-size: 8vw;
+                    padding-bottom: 10px;
+                }
+            }
+
+            .hero-right {
+                margin-top: 2rem;
+                display: grid;
+                grid-template-areas:
+                    "a a b b"
+                    "a a b b"
+                    "a a b b"
+                    "a a b b"
+                    "a a c c"
+                    "a a c c"
+                    "a a c c";
+
+                gap: 10px;
+
+                img {
+                    width: 100%;
+                    border-radius: 15px;
+                }
+
+                .img-a {
+                    grid-area: a;
+                    aspect-ratio: auto;
+                }
+
+                .img-b {
+                    grid-area: b;
+                }
+
+                .img-c {
+                    grid-area: c;
+                }
+
+
+            }
+
+            button {
+                background: #000;
+                color: white;
+
+                width: max-content;
+                font-size: 1.2rem;
+
+
+                padding: 1rem 2rem;
+                border-radius: 50px;
+
+                position: absolute;
+                left: 50%;
+                bottom: 0;
+                transform: translateX(-50%);
+                transition: all 0.3S cubic-bezier(0.19, 1, 0.22, 1);
+            }
+
+        }
+    }
+}
+
+@media (min-width:600px) {
+    body {
+        main {
+            padding: 2.5rem;
+
+            .Hero {
+                display: flex;
+
+                .hero-left {
+                    width: 60%;
+
+                    h2 {
+                        width: 80%;
+                        font-size: 5rem;
+                    }
+
+                    p {
+                        width: 80%;
+
+                    }
+                }
+
+                .hero-right {
+                    height: 90%;
+                    width: 40%;
+                    grid-template-areas:
+                        ". . b b"
+                        "a a b b"
+                        "a a b b"
+                        "a a b b"
+                        "a a c c"
+                        "a a c c"
+                        ". . c c";
+
+                    .img-a {
+                        aspect-ratio: auto;
+                    }
+                }
+                button{
+                    left: 0;
+                    bottom: 50%;
+                    transform: translateX(0);
+                }
+
+            }
+
+        }
+    }
+}
