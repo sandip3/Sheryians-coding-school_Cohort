@@ -1,0 +1,95 @@
+@import url('https: //fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+/* universal sign  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-size: 16px;
+}
+
+header {
+    padding-bottom: 50px;
+
+    & .title {
+        font-size: 2rem;
+    }
+
+    & .Sub_title {
+        font-weight: 600;
+    }
+
+}
+
+
+section {
+    display: grid;
+
+    & .Product {
+        margin: 20px;
+        padding: 15px;
+
+
+        border: 2px solid rgb(204, 204, 204);
+        border-radius: 10px;
+
+        & img {
+            width: 100%;
+            /* height: 210px; */
+            border-radius: 10px;
+        }
+
+        & .Product_name {
+            font-size: 1.5rem;
+            font-weight: 800;
+        }
+
+        & .Product_desc {
+            padding: 10px 0;
+        }
+
+        & .Product_price {
+            font-weight: 800;
+        }
+    }
+}
+
+footer {
+    padding: 15px;
+
+    border-top: 2px solid rgb(196, 194, 194);
+    opacity: 50%;
+
+    font-size: 1.3rem;
+    font-weight: 600;
+
+}
+
+@media (min-width:600px) {
+
+    html {
+        font-size: 20px;
+    }
+
+    section {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    footer {
+        padding: 20px 30px;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+}
