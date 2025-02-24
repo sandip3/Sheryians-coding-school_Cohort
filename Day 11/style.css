@@ -1,0 +1,477 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+}
+
+body {
+  padding: 1rem;
+  background: #fdfbf5;
+}
+
+main {
+  width: 100%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  padding: 2rem 3rem;
+  border: 1px solid black;
+}
+main header {
+  width: 100%;
+  font-size: 0.9rem;
+  border-bottom: 1px solid black;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main header .header-left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main header .header-left svg {
+  width: 50px;
+  aspect-ratio: 1/1;
+}
+main header .header-left h3 {
+  margin-left: 20px;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+main header .header-right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 40%;
+}
+main header .header-right a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+main header .header-right .header-cta {
+  color: white;
+  background: black;
+  padding: 10px 15px;
+  border-radius: 10px;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+main header .header-right .header-right-logo {
+  padding: 5px 10px;
+  border: 1px solid black;
+  border-width: 0 2px;
+}
+main header .header-right .header-right-logo span {
+  padding: 5px 8px;
+  margin: 0 3px;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+main .Hero-section {
+  padding-top: 60px;
+}
+main .Hero-section h1 {
+  font-size: 6rem;
+  font-weight: 500;
+  line-height: 1;
+  margin: 30px 0;
+}
+main .Hero-section img {
+  width: 100%;
+  border-radius: 20px;
+  margin-top: 20px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .value-section {
+  width: 100%;
+  padding: 60px 0;
+  border-bottom: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+}
+main .value-section .value-left {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+main .value-section .value-left div p {
+  text-transform: uppercase;
+  padding-bottom: 20px;
+}
+main .value-section .value-left div h2 {
+  font-size: 6rem;
+  font-weight: 500;
+  line-height: 1;
+}
+main .value-section .value-left button {
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 7px 15px;
+  color: white;
+  background: #000;
+  font-size: 1.1rem;
+  border-radius: 10px;
+}
+main .value-section .line {
+  height: initial;
+  background: #000;
+  width: 1px;
+}
+main .value-section .value-right {
+  width: 35%;
+  padding-left: 50px;
+}
+main .value-section .value-right div {
+  display: flex;
+  flex-direction: column;
+  justify-content: justify-content;
+  gap: 20px;
+  padding: 50px 0;
+}
+main .value-section .value-right div svg {
+  width: 60px;
+  aspect-ratio: 1/1;
+}
+main .value-section .value-right div h3 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+main .value-section .value-right div p {
+  font-size: 1.1rem;
+}
+main .value-section .value-right .line {
+  padding: 0;
+  width: 100%;
+  height: 1px;
+}
+main .team-section {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+  padding: 60px 0;
+}
+main .team-section .team-left {
+  width: 35%;
+  display: flex;
+  position: relative;
+}
+main .team-section .team-left div {
+  height: -moz-fit-content;
+  height: fit-content;
+  position: sticky;
+  top: 0;
+}
+main .team-section .team-left div h2 {
+  font-weight: 500;
+  font-size: 4rem;
+}
+main .team-section .team-left div p {
+  font-size: 1.4rem;
+  line-height: 30px;
+}
+main .team-section .team-right {
+  width: 65%;
+  padding-left: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  border-left: 1px solid black;
+}
+main .team-section .team-right div {
+  width: 48%;
+}
+main .team-section .team-right div video {
+  width: 100%;
+  border-radius: 20px;
+}
+main .team-section .team-right div div {
+  margin: 20px 0;
+}
+main .team-section .team-right div div h3 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+main .contect-section {
+  padding: 60px 0;
+  border-bottom: 1px solid #000;
+  display: flex;
+}
+main .contect-section .contect-left {
+  width: 65%;
+  border-right: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10rem;
+}
+main .contect-section .contect-left div p {
+  text-transform: uppercase;
+}
+main .contect-section .contect-left div h3 {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 6rem;
+}
+main .contect-section .contect-left svg {
+  width: 80px;
+}
+main .contect-section .contect-right {
+  width: 35%;
+  padding-left: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+main .contect-section .contect-right p {
+  font-size: 1.8rem;
+}
+main .contect-section .contect-right button {
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: white;
+  background: #000;
+  font-size: 1rem;
+}
+main footer .footer-top {
+  display: flex;
+  padding: 50px 0;
+  border-bottom: 1px solid black;
+}
+main footer .footer-top .footer-left {
+  width: 35%;
+  border-right: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+main footer .footer-top .footer-left .f-l-t div {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+main footer .footer-top .footer-left .f-l-t div svg {
+  width: 50px;
+  aspect-ratio: 1/1;
+}
+main footer .footer-top .footer-left .f-l-t p {
+  margin-top: 25px;
+  font-size: 1.2rem;
+}
+main footer .footer-top .footer-left .f-l-b .bottom-right-logo {
+  padding: 20px 0;
+  display: flex;
+  gap: 20px;
+}
+main footer .footer-top .footer-left .f-l-b .bottom-right-logo span {
+  border: 1px solid black;
+  padding: 7px 10px;
+  border-radius: 50%;
+}
+main footer .footer-top .footer-right {
+  width: 65%;
+  padding-left: 40px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+main footer .footer-top .footer-right .nav-link {
+  display: flex;
+  justify-content: space-between;
+}
+main footer .footer-top .footer-right .nav-link div {
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+main footer .footer-top .footer-right .nav-link div h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+main footer .footer-top .footer-right .nav-link div a {
+  text-decoration: none;
+  color: black;
+}
+main footer .footer-top .footer-right .nav-link div button {
+  color: white;
+  background: #000;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+main footer .footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 0.8rem;
+  }
+  body main {
+    padding: 20px;
+  }
+  body main header {
+    padding-bottom: 15px;
+  }
+  body main header .header-left h3 {
+    font-weight: 500;
+    margin-left: 15px;
+  }
+  body main header .header-right {
+    display: none;
+  }
+  body main .Hero-section {
+    padding-top: 35px;
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+  body main .Hero-section h1 {
+    font-size: 4rem;
+    margin: 15px 0;
+  }
+  body main .Hero-section img {
+    height: 180px;
+  }
+  body main .value-section {
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  body main .value-section .value-left {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  body main .value-section .value-left div {
+    padding-bottom: 30px;
+    width: 100%;
+  }
+  body main .value-section .value-left div h2 {
+    font-size: 3rem;
+  }
+  body main .value-section .value-left button {
+    padding: 7px 20px;
+  }
+  body main .value-section .line {
+    height: 1px;
+    width: 100%;
+  }
+  body main .value-section .value-right {
+    padding: 0;
+    width: 100%;
+  }
+  body main .value-section .value-right div p {
+    font-size: 1rem;
+    line-height: 25px;
+    opacity: 70%;
+  }
+  body main .team-section {
+    flex-direction: column;
+  }
+  body main .team-section .team-left {
+    width: 100%;
+  }
+  body main .team-section .team-left div h2 {
+    font-size: 3rem;
+    text-transform: uppercase;
+  }
+  body main .team-section .team-left div p {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    padding-bottom: 30px;
+  }
+  body main .team-section .team-right {
+    width: 100%;
+    padding: 0;
+    padding-top: 30px;
+    border: 0;
+    border-top: 1px solid black;
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+  body main .team-section .team-right div {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  body main .team-section .team-right div div {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  body main .team-section .team-right div div h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  body main .contect-section {
+    padding: 40px 0;
+    flex-direction: column;
+  }
+  body main .contect-section .contect-left {
+    width: 100%;
+    border: 0;
+    flex-direction: column-reverse;
+    gap: 30px;
+  }
+  body main .contect-section .contect-left div h3 {
+    padding-top: 10px;
+    width: 100%;
+    font-size: 3.1rem;
+  }
+  body main .contect-section .contect-left svg {
+    width: 60px;
+    padding-bottom: 20px;
+  }
+  body main .contect-section .contect-right {
+    width: 100%;
+    padding: 0;
+    gap: 30px;
+  }
+  body main .contect-section .contect-right p {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    padding-bottom: 10px;
+  }
+  body main footer .footer-top {
+    border: 0;
+    flex-direction: column;
+    padding: 0;
+  }
+  body main footer .footer-top .footer-left {
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid black;
+  }
+  body main footer .footer-top .footer-right {
+    width: 100%;
+    padding: 0;
+  }
+  body main footer .footer-top .footer-right .nav-link {
+    flex-direction: column;
+    gap: 10px;
+  }
+  body main footer .footer-top .footer-right .nav-link div {
+    border-bottom: 1px solid black;
+  }
+  body main footer .footer-bottom {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    font-size: 1.1rem;
+  }
+}/*# sourceMappingURL=style.css.map */

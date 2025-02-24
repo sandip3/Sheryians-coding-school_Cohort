@@ -1,0 +1,14 @@
+// _mixin.scss
+@mixin all-row-center($style) {
+    display: flex;
+    justify-content: $style; // Apply the passed style
+    align-items: center;
+}
+
+@mixin all-col-center($style){
+    display: flex;
+    flex-direction: column;
+    justify-content: $style;
+    // justify-content: ;
+    // align-items: center;
+}
