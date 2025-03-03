@@ -624,3 +624,7 @@
 // else {
 //     console.log("Enter Single Digit Number Ex : 0,1,2,3..,9");
 // }
+
+a = 10
+console.log(a);
+console.log(typeof a);
