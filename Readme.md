@@ -69,8 +69,8 @@ For more details, please refer to the [Assignment 4 README](./Day%205/Readme.md#
 
 - **Technology Used:** HTML,css, Flex , tansion, animation
 - **Live Links:**
-  - [Link 1](https://sandip-cohort.netlify.app/day%203/)
-  - [Link 2](https://sandip3.github.io/Sheryians-coding-school_Cohort/Day%203/)
+  - [Link 1](https://sandip-cohort.netlify.app/day%207/)
+  - [Link 2](https://sandip3.github.io/Sheryians-coding-school_Cohort/Day%207/)
 - **Source Code:** [GitHub Repository](https://github.com/sandip3/Sheryians-coding-school_Cohort)
 
 **🖼️ Project Preview:**
