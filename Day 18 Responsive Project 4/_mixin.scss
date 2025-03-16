@@ -1,0 +1,11 @@
+@mixin Flex-c($gap) {
+    display: flex;
+    flex-direction: column;
+    gap: $gap;
+}
+
+@mixin Flex-r($gap) {
+    display: flex;
+    flex-direction: row;
+    gap: $gap;
+}

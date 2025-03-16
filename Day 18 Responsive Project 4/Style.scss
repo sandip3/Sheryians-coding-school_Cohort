@@ -1,0 +1,299 @@
+@import 'mixin';
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    padding: 0.4rem 0.7rem;
+
+    scroll-behavior: smooth;
+
+    font-family: sans-serif;
+}
+
+
+main {
+    width: 100%;
+
+    @include Flex-c(25px);
+
+    .Header {
+        width: 100%;
+
+        display: flex;
+        justify-content: space-between;
+
+        .head-right {
+            display: none;
+        }
+    }
+
+    .Hero_Title {
+        width: 100%;
+
+        @include Flex-c(20px);
+
+        .Hero_top {
+            width: 100%;
+
+            .hero_Heding {
+                width: 100%;
+            }
+        }
+
+        .text-below-img {
+            display: flex;
+            justify-content: space-between;
+
+            p {
+                text-transform: uppercase;
+                font-size: 0.8rem;
+            }
+        }
+    }
+
+    .Hero_Sub {
+        width: 100%;
+
+        @include Flex-c(25px);
+
+        .Hero_Bottom {
+            @include Flex-c(25px);
+
+            .Hero_bottom_1 {
+                width: 100%;
+
+                .Hero_Img {
+                    width: 100%;
+                    aspect-ratio: 1/1;
+                    object-fit: cover;
+                }
+            }
+
+            .Hero_bottom_2 {
+
+                @include Flex-c(25px);
+
+                .Hero_bottom_2_Top {
+                    @include Flex-c(25px);
+
+                    h2 {
+                        font-size: 2.5rem;
+                        font-family: sans-serif;
+                        font-weight: 300;
+
+                        line-height: 1;
+
+                        text-transform: uppercase;
+                    }
+
+                    p {
+                        letter-spacing: 1px;
+                        line-height: 26px;
+
+                        font-family: monospace;
+                        font-size: 1.1rem;
+                    }
+                }
+
+                .Hero_bottom_2_Bottom {
+                    @include Flex-c(20px);
+
+                    .Hero_bottom_2_Bottom_sub {
+                        @include Flex-r(20px);
+                        justify-content: space-between;
+
+                        p {
+                            font-size: 2rem;
+                            font-family: sans-serif;
+                            font-weight: 300;
+                            text-transform: uppercase;
+                        }
+                    }
+
+                    hr {
+                        opacity: 0.2;
+                    }
+                }
+
+            }
+
+        }
+    }
+
+    .Brand_Solu­tions {
+        width: 100%;
+        @include Flex-c(25px);
+
+        .Brand_Solu­tions_l {
+            width: 100%;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .Brand_Solu­tions_r {
+            @include Flex-r(20px);
+            flex-direction: row-reverse;
+
+            .Brand_Solu­tions_r_l {
+                width: 90%;
+                @include Flex-c(20px);
+
+                h2 {
+                    text-transform: uppercase;
+                    font-family: sans-serif;
+                    font-size: 3rem;
+                    font-weight: 300;
+
+                    line-height: 1;
+                }
+
+                p {
+                    font-size: 1.1rem;
+                    letter-spacing: 3px;
+                    opacity: 0.4;
+                }
+            }
+
+            .Brand_Solu­tions_r_r {
+                writing-mode: vertical-rl;
+            }
+        }
+
+    }
+}
+
+
+@media (min-width:1020px) {
+
+    html,
+    body {
+        padding: 1rem 2rem;
+
+        main {
+
+            gap: 50px;
+
+            .Header {
+                display: flex;
+                gap: 30px;
+                align-items: center;
+
+                .head-right {
+                    display: flex;
+                    align-items: center;
+                    gap: 25px;
+
+                    a {
+                        font-size: 0.8rem;
+                        color: black;
+                        text-decoration: none;
+                        text-transform: uppercase;
+
+                        opacity: 0.9;
+
+                    }
+
+                    button {
+                        background: #000;
+                        padding: 12px 20px;
+                        border-radius: 30px;
+
+                        a {
+                            color: white;
+                            opacity: 1;
+                            letter-spacing: 1px;
+                            font-weight: 500;
+                        }
+                    }
+                }
+            }
+
+            .Hero_Sub {
+                
+                .Hero_Bottom {
+                    flex-direction: row-reverse;
+                    gap: 50px;
+                    align-items: center;
+
+                    .Hero_bottom_1 {
+                        width: 50%;
+                    }
+
+                    .Hero_bottom_2 {
+                        width: 50%;
+                        margin: 50px 0;
+
+                        .Hero_bottom_2_Top {
+
+                            h2 {
+                                font-size: 5em;
+                                font-weight: 300;
+                            }
+
+                            p {
+                                width: 75%;
+                                font-size: 1.3rem;
+                                line-height: 35px;
+                            }
+                        }
+
+                        .Hero_bottom_2_Bottom {
+                            margin-top: auto;
+                        }
+                    }
+                }
+            }
+
+            .Brand_Solu­tions {
+                width: 100%;
+                @include Flex-r(4rem);
+                align-items: center;
+
+                .Brand_Solu­tions_l {
+                    width: 30%;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                .Brand_Solu­tions_r {
+                    width: 70%;
+                    padding: 30px 0;
+
+                    @include Flex-r(25px);
+                    justify-content: space-between;
+
+
+                    .Brand_Solu­tions_r_l {
+                        width: 80%;
+
+                        h2 {
+                            font-size: 6.5rem;
+                        }
+
+                        p {
+                            width: 65%;
+                            margin-top: auto;
+                        }
+                    }
+
+                    .Brand_Solu­tions_r_r {
+                        width: 10%;
+                    }
+
+                }
+
+            }
+        }
+    }
+}

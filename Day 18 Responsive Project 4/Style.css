@@ -1,0 +1,268 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  padding: 0.4rem 0.7rem;
+  scroll-behavior: smooth;
+  font-family: sans-serif;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+main .Header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+main .Header .head-right {
+  display: none;
+}
+main .Hero_Title {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+main .Hero_Title .Hero_top {
+  width: 100%;
+}
+main .Hero_Title .Hero_top .hero_Heding {
+  width: 100%;
+}
+main .Hero_Title .text-below-img {
+  display: flex;
+  justify-content: space-between;
+}
+main .Hero_Title .text-below-img p {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+main .Hero_Sub {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+main .Hero_Sub .Hero_Bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+main .Hero_Sub .Hero_Bottom .Hero_bottom_1 {
+  width: 100%;
+}
+main .Hero_Sub .Hero_Bottom .Hero_bottom_1 .Hero_Img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .Hero_Sub .Hero_Bottom .Hero_bottom_2 {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+main .Hero_Sub .Hero_Bottom .Hero_bottom_2 .Hero_bottom_2_Top {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+main .Hero_Sub .Hero_Bottom .Hero_bottom_2 .Hero_bottom_2_Top h2 {
+  font-size: 2.5rem;
+  font-family: sans-serif;
+  font-weight: 300;
+  line-height: 1;
+  text-transform: uppercase;
+}
+main .Hero_Sub .Hero_Bottom .Hero_bottom_2 .Hero_bottom_2_Top p {
+  letter-spacing: 1px;
+  line-height: 26px;
+  font-family: monospace;
+  font-size: 1.1rem;
+}
+main .Hero_Sub .Hero_Bottom .Hero_bottom_2 .Hero_bottom_2_Bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+main .Hero_Sub .Hero_Bottom .Hero_bottom_2 .Hero_bottom_2_Bottom .Hero_bottom_2_Bottom_sub {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: space-between;
+}
+main .Hero_Sub .Hero_Bottom .Hero_bottom_2 .Hero_bottom_2_Bottom .Hero_bottom_2_Bottom_sub p {
+  font-size: 2rem;
+  font-family: sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+main .Hero_Sub .Hero_Bottom .Hero_bottom_2 .Hero_bottom_2_Bottom hr {
+  opacity: 0.2;
+}
+main .Brand_Solu­tions {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+main .Brand_Solu­tions .Brand_Solu­tions_l {
+  width: 100%;
+}
+main .Brand_Solu­tions .Brand_Solu­tions_l img {
+  width: 100%;
+}
+main .Brand_Solu­tions .Brand_Solu­tions_r {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  flex-direction: row-reverse;
+}
+main .Brand_Solu­tions .Brand_Solu­tions_r .Brand_Solu­tions_r_l {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+main .Brand_Solu­tions .Brand_Solu­tions_r .Brand_Solu­tions_r_l h2 {
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-size: 3rem;
+  font-weight: 300;
+  line-height: 1;
+}
+main .Brand_Solu­tions .Brand_Solu­tions_r .Brand_Solu­tions_r_l p {
+  font-size: 1.1rem;
+  letter-spacing: 3px;
+  opacity: 0.4;
+}
+main .Brand_Solu­tions .Brand_Solu­tions_r .Brand_Solu­tions_r_r {
+  writing-mode: vertical-rl;
+}
+
+@media (min-width: 1020px) {
+  html,
+  body {
+    padding: 1rem 2rem;
+  }
+  html main,
+  body main {
+    gap: 50px;
+  }
+  html main .Header,
+  body main .Header {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+  }
+  html main .Header .head-right,
+  body main .Header .head-right {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+  }
+  html main .Header .head-right a,
+  body main .Header .head-right a {
+    font-size: 0.8rem;
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    opacity: 0.9;
+  }
+  html main .Header .head-right button,
+  body main .Header .head-right button {
+    background: #000;
+    padding: 12px 20px;
+    border-radius: 30px;
+  }
+  html main .Header .head-right button a,
+  body main .Header .head-right button a {
+    color: white;
+    opacity: 1;
+    letter-spacing: 1px;
+    font-weight: 500;
+  }
+  html main .Hero_Sub .Hero_Bottom,
+  body main .Hero_Sub .Hero_Bottom {
+    flex-direction: row-reverse;
+    gap: 50px;
+    align-items: center;
+  }
+  html main .Hero_Sub .Hero_Bottom .Hero_bottom_1,
+  body main .Hero_Sub .Hero_Bottom .Hero_bottom_1 {
+    width: 50%;
+  }
+  html main .Hero_Sub .Hero_Bottom .Hero_bottom_2,
+  body main .Hero_Sub .Hero_Bottom .Hero_bottom_2 {
+    width: 50%;
+    margin: 50px 0;
+  }
+  html main .Hero_Sub .Hero_Bottom .Hero_bottom_2 .Hero_bottom_2_Top h2,
+  body main .Hero_Sub .Hero_Bottom .Hero_bottom_2 .Hero_bottom_2_Top h2 {
+    font-size: 5em;
+    font-weight: 300;
+  }
+  html main .Hero_Sub .Hero_Bottom .Hero_bottom_2 .Hero_bottom_2_Top p,
+  body main .Hero_Sub .Hero_Bottom .Hero_bottom_2 .Hero_bottom_2_Top p {
+    width: 75%;
+    font-size: 1.3rem;
+    line-height: 35px;
+  }
+  html main .Hero_Sub .Hero_Bottom .Hero_bottom_2 .Hero_bottom_2_Bottom,
+  body main .Hero_Sub .Hero_Bottom .Hero_bottom_2 .Hero_bottom_2_Bottom {
+    margin-top: auto;
+  }
+  html main .Brand_Solu­tions,
+  body main .Brand_Solu­tions {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+    align-items: center;
+  }
+  html main .Brand_Solu­tions .Brand_Solu­tions_l,
+  body main .Brand_Solu­tions .Brand_Solu­tions_l {
+    width: 30%;
+  }
+  html main .Brand_Solu­tions .Brand_Solu­tions_l img,
+  body main .Brand_Solu­tions .Brand_Solu­tions_l img {
+    width: 100%;
+  }
+  html main .Brand_Solu­tions .Brand_Solu­tions_r,
+  body main .Brand_Solu­tions .Brand_Solu­tions_r {
+    width: 70%;
+    padding: 30px 0;
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    justify-content: space-between;
+  }
+  html main .Brand_Solu­tions .Brand_Solu­tions_r .Brand_Solu­tions_r_l,
+  body main .Brand_Solu­tions .Brand_Solu­tions_r .Brand_Solu­tions_r_l {
+    width: 80%;
+  }
+  html main .Brand_Solu­tions .Brand_Solu­tions_r .Brand_Solu­tions_r_l h2,
+  body main .Brand_Solu­tions .Brand_Solu­tions_r .Brand_Solu­tions_r_l h2 {
+    font-size: 6.5rem;
+  }
+  html main .Brand_Solu­tions .Brand_Solu­tions_r .Brand_Solu­tions_r_l p,
+  body main .Brand_Solu­tions .Brand_Solu­tions_r .Brand_Solu­tions_r_l p {
+    width: 65%;
+    margin-top: auto;
+  }
+  html main .Brand_Solu­tions .Brand_Solu­tions_r .Brand_Solu­tions_r_r,
+  body main .Brand_Solu­tions .Brand_Solu­tions_r .Brand_Solu­tions_r_r {
+    width: 10%;
+  }
+}/*# sourceMappingURL=Style.css.map */
