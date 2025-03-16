@@ -56,12 +56,13 @@ body main .Hero button {
   transition: all 0.3S cubic-bezier(0.19, 1, 0.22, 1);
 }
 
-@media (min-width: 600px) {
+@media (min-width: 1020px) {
   body main {
     padding: 2.5rem;
   }
   body main .Hero {
     display: flex;
+    align-items: center;
   }
   body main .Hero .hero-left {
     width: 60%;
@@ -83,7 +84,6 @@ body main .Hero button {
   }
   body main .Hero button {
     left: 0;
-    bottom: 50%;
     transform: translateX(0);
   }
 }/*# sourceMappingURL=style.css.map */
