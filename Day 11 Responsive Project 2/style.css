@@ -320,7 +320,7 @@ main footer .footer-bottom {
   padding-top: 30px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1020px) {
   body {
     padding: 0.8rem;
   }
@@ -345,9 +345,6 @@ main footer .footer-bottom {
   body main .Hero-section h1 {
     font-size: 4rem;
     margin: 15px 0;
-  }
-  body main .Hero-section img {
-    height: 180px;
   }
   body main .value-section {
     padding: 30px 0;
