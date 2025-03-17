@@ -74,13 +74,13 @@ For more details, please refer to the [Assignment 4 README](./Day%205/Readme.md#
 - **Source Code:** [GitHub Repository](https://github.com/sandip3/Sheryians-coding-school_Cohort)
 
 **🖼️ Project Preview:**
-![Blog Website Preview](./public/Day%206.gif)
+![Blog Website Preview](./public/Day%206%20(Assignment%205%20).gif)
 
 
 For more details, please refer to the [Assignment 5 README](./Day%205/Readme.md#assignment-4-coffee-shop-static-page).
 
 ---
-## Assignment 6: Photo Gallery (static page) 
+## Assignment 6: Photo Gallery (static + Repsonsive page) 
 
 - **Technology Used:** HTML,css, Grid
 - **Live Links:**
@@ -89,24 +89,33 @@ For more details, please refer to the [Assignment 5 README](./Day%205/Readme.md#
 - **Source Code:** [GitHub Repository](https://github.com/sandip3/Sheryians-coding-school_Cohort)
 
 **🖼️ Project Preview:**
+
 ![Blog Website Preview](./public/Day%207.gif)
 
-
-For more details, please refer to the [Assignment 4 README](./Day%205/Readme.md#assignment-4-coffee-shop-static-page).
-
 ---
-## Assignment 7: Photo Gallery (static page) 
+## Assignment 7: Portfolio Design (static + Repsonsive page) 
 
 - **Technology Used:** HTML,css, Grid ,scss
 - **Live Links:**
-  - [Link 1](https://sandip-cohort.netlify.app/day%207 /)
-  - [Link 2](https://sandip3.github.io/Sheryians-coding-school_Cohort/Day%207/)
+  - [Link 1](https://sandip-cohort.netlify.app/Day%208%20Responsive%20Project/)
+  - [Link 2](https://sandip3.github.io/Sheryians-coding-school_Cohort/Day%208%20Responsive%20Project/)
 - **Source Code:** [GitHub Repository](https://github.com/sandip3/Sheryians-coding-school_Cohort)
 
 **🖼️ Project Preview:**
-![Blog Website Preview](./public/Day%207.gif)
 
+![Blog Website Preview](./public/Day%208.gif)
 
-For more details, please refer to the [Assignment 4 README](./Day%205/Readme.md#assignment-4-coffee-shop-static-page).
+---
+## Assignment 8: Portfolio Design - 2 (static  page) 
+
+- **Technology Used:** HTML,Tailwind css
+- **Live Links:**
+  - [Link 1](https://sandip-cohort.netlify.app/Day%209)
+  - [Link 2](https://sandip3.github.io/Sheryians-coding-school_Cohort/Day%209)
+- **Source Code:** [GitHub Repository](https://github.com/sandip3/Sheryians-coding-school_Cohort)
+
+**🖼️ Project Preview:**
+
+![Blog Website Preview](./public/Day%208.gif)
 
 ---
