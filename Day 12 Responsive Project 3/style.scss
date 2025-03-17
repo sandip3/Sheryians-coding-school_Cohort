@@ -29,13 +29,13 @@ body {
                 margin-top: 2rem;
                 display: grid;
                 grid-template-areas:
-                    "a a b b"
+                    ". . b b"
                     "a a b b"
                     "a a b b"
                     "a a b b"
                     "a a c c"
                     "a a c c"
-                    "a a c c";
+                    ". . c c";
 
                 gap: 10px;
 

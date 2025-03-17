@@ -24,7 +24,7 @@ body main .Hero .hero-left h2 {
 body main .Hero .hero-right {
   margin-top: 2rem;
   display: grid;
-  grid-template-areas: "a a b b" "a a b b" "a a b b" "a a b b" "a a c c" "a a c c" "a a c c";
+  grid-template-areas: ". . b b" "a a b b" "a a b b" "a a b b" "a a c c" "a a c c" ". . c c";
   gap: 10px;
 }
 body main .Hero .hero-right img {
