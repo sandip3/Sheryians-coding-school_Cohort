@@ -1,6 +1,6 @@
-# DSA Assignment 1 (JS Interview Questions)
+# DSA Assignment 1 (JS Assignment Questions)
 
-This file contains solutions to various JavaScript interview questions,
+This file contains solutions to various JavaScript Assignment questions,
 focusing on increment/decrement operators and related pitfalls.
 
 Each question is separated into its own code block.
