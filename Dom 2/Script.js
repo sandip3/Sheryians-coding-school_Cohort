@@ -10,6 +10,6 @@ btn.addEventListener("click", () => {
     let br = Math.floor(Math.random() * 51)
 
     box.style.backgroundColor = `rgb( ${c1} , ${c2} , ${c3} )`
-    box.style.border = `${px}px solid white`
+    box.style.border = `${px}px solid rgb( ${c3} , ${c2} , ${c1} )`
     box.style.borderRadius = `${br}%`
 })

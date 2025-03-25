@@ -26,15 +26,22 @@ body {
 
 .box {
     background: #000;
-    /* border: 6px solid #d2b9b9; */
+    border: 6px solid #d2b9b9;
     width: 300px;
     height: 300px;
+    border-radius: 10%;
 }
 
 button{
-    font-size: 20px;
+    font-size: 1.5rem;
     padding: 10px;
     border-radius: 10px;
     /* color: rgb(255, 0, 0); */
+    background: #cbf050;
+    font-weight: 600;
+    
+}
 
+button:active{
+    scale: 0.80;
 }

@@ -159,3 +159,31 @@ _Refer to the [Assignment 12 README](./Day%2015%20JS%20/Readme.md) for details._
 _See the [Assignment 14 README](./Day%2027/Readme.md) for more info._
 
 ---
+
+### Assignment 14: Javascript DSA Practice Question 🤓 (Day 27)
+- **Technology Used:** HTML, JavaScript  
+- **Live Links:** *(Not provided)*  
+- **Source Code:** [💻 GitHub Repository](https://github.com/sandip3/Sheryians-coding-school_Cohort/tree/main/Day%2027)  
+_See the [Assignment 14 README](./Day%2027/Readme.md) for more info._
+
+---
+
+### Practice Demo: DOM Manipulation with Randomization 🚀 
+- **Status:** _Completed_
+- **Technology Used:** HTML, CSS, JavaScript  
+- **Live Links:**  
+  - 🌐 **Link 1:** [Netlify](https://sandip-cohort.netlify.app/dom%202/)  
+  - 🌐 **Link 2:** [GitHub Pages](https://sandip3.github.io/Sheryians-coding-school_Cohort/Dom%202/)  
+- **Source Code:** [💻 GitHub Repository](https://github.com/sandip3/Sheryians-coding-school_Cohort/tree/main/Dom%202)  
+- **Project Preview:**  
+  ![DOM Manipulation Demo Preview](./public/Dom%202.gif)  
+- **Key Features:**  
+  - Button click interaction triggers random changes  
+  - Random background color  
+  - Random border color  
+  - Random border radius  
+  - Random border size  
+- **Techniques Used:**  
+  - Math.random() & Math.floor()  
+  - Template Literals  
+  - DOM Manipulation
