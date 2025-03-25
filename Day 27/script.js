@@ -54,12 +54,12 @@
 }
 
 /* Q8: Identify the Syntax Error or Logical Issue */
-/*
+
 {
-  let i = 11;
-  let j = --(i++); // Syntax Error: Cannot apply pre-decrement on (i++)
+    let i = 11;
+    let j = --(i++); // Syntax Error: Cannot apply pre-decrement on (i++)
 }
-*/
+
 
 /* Q9: Find Output of the Following Code */
 {
@@ -76,15 +76,19 @@
 }
 
 /* Q11: Identify the Syntax Error or Logical Issue */
-/*
+
 {
-  let a = 11++; // Syntax Error: Invalid use of the increment operator
-  console.log(a);
+    let a = 11++; // Syntax Error: Invalid use of the increment operator
+    console.log(a);
 }
-*/
+
 
 /* Q12: Find Output of the Following Code */
 {
     let i = 0, j = 0;
     console.log("Q12 Output:", --i * i++ * ++j * j++); // Expected Output: 1
 }
+
+// Made By Mishra Sandip
+
+
