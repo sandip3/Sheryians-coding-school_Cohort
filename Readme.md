@@ -160,11 +160,11 @@ _See the [Assignment 14 README](./Day%2027/Readme.md) for more info._
 
 ---
 
-### Assignment 14: Javascript DSA Practice Question 🤓 (Day 27)
+### Assignment 15: Javascript DSA Practice Question 🤓 (Day 29)
 - **Technology Used:** HTML, JavaScript  
 - **Live Links:** *(Not provided)*  
-- **Source Code:** [💻 GitHub Repository](https://github.com/sandip3/Sheryians-coding-school_Cohort/tree/main/Day%2027)  
-_See the [Assignment 14 README](./Day%2027/Readme.md) for more info._
+- **Source Code:** [💻 GitHub Repository](https://github.com/sandip3/Sheryians-coding-school_Cohort/tree/main/Day%2029)  
+_See the [Assignment 14 README](./Day%2029/Readme.md) for more info._
 
 ---
 
