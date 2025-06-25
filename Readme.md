@@ -164,7 +164,7 @@ _See the [Assignment 14 README](./Day%2027/Readme.md) for more info._
 - **Technology Used:** HTML, JavaScript  
 - **Live Links:** *(Not provided)*  
 - **Source Code:** [💻 GitHub Repository](https://github.com/sandip3/Sheryians-coding-school_Cohort/tree/main/Day%2029)  
-_See the [Assignment 14 README](./Day%2029/Readme.md) for more info._
+_See the [Assignment 15 README](./Day%2029/Readme.md) for more info._
 
 ---
 

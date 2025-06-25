@@ -15,7 +15,7 @@ main {
   background: #161616;
   color: #dac5a7;
   text-align: center;
-  padding: 0 20px;
+  padding: 20px;
 }
 main .Hero {
   display: flex;
@@ -74,6 +74,24 @@ main .services .maruqee {
   display: flex;
   width: 50%;
   overflow-x: hidden;
+  position: relative;
+}
+main .services .maruqee::before {
+  content: " ";
+  height: 100%;
+  width: 10vw;
+  background: linear-gradient(to right, #161616, transparent);
+  position: absolute;
+  z-index: 1;
+  left: 0;
+}
+main .services .maruqee::after {
+  content: " ";
+  height: 100%;
+  width: 10vw;
+  background: linear-gradient(to left, #161616, transparent);
+  position: absolute;
+  right: 0;
 }
 main .services .maruqee .txt {
   padding: 0 10px;
