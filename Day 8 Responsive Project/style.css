@@ -7,11 +7,12 @@
 html,
 body {
   height: 100%;
-  bottom: 100%;
-  font-size: 16;
+  width: 100%;
+  font-size: 16px;
 }
 
 main {
+  min-height: 100vh;
   background: #161616;
   color: #dac5a7;
   text-align: center;
@@ -72,7 +73,7 @@ main .services .Service-main p {
 }
 main .services .maruqee {
   display: flex;
-  width: 50%;
+  width: 100%;
   overflow-x: hidden;
   position: relative;
 }
@@ -119,5 +120,8 @@ main .services .maruqee .txt {
   }
   main .Hero p {
     font-size: 1.5rem;
+  }
+  main .services .maruqee {
+    width: 50%;
   }
 }/*# sourceMappingURL=style.css.map */

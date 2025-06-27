@@ -30,7 +30,7 @@
                     <h1 class="text-[8rem] -mx-2 -my-10 font-[Liberation_Mono]">Sandip.</h1>
                 </div>
                 <div class="flex justify-center items-center h-fit font-[Helvetica_Now_Display] text-[1.2rem]">
-                    <p class="opacity-60">[ 06 : 32 PM ]</p>
+                    <p class="opacity-60">[ <span class="Tm">06 : 32 PM</span> ]</p>
                     <div class="w-20 h-[1px] mx-5 bg-black"></div>
                     <p class="font-[900]">Creative Front End Developer</p>
                 </div>
@@ -44,12 +44,8 @@
 
             <section
                 class="w-[87%] mx-[auto] h-120 text-center flex justify-center items-center flex-col relative mb-40">
-                <img class="w-22 absolute top-7 left-[10%] -rotate-20"
-                    src="./Img/Code.png"
-                    alt="Code">
-                <img class="w-30 absolute top-5 right-[10%] rotate-20"
-                    src="./Img/Html.png"
-                    alt="Html">
+                <img class="w-22 absolute top-7 left-[10%] -rotate-20" src="./Img/Code.png" alt="Code">
+                <img class="w-30 absolute top-5 right-[10%] rotate-20" src="./Img/Html.png" alt="Html">
                 <p class="text-[3.5rem] font-[700] tracking-tight ">[ I design & build experiences ]</p>
                 <p class="w-[80%] p-5 text-[1.5rem] font-medium ">Lorem ipsum dolor sit amet, consectetur adipisicing
                     elit. Mollitia, fugit, veniam
@@ -57,12 +53,8 @@
                     iusto at impedit suscipit maxime culpa officia. Ipsam suscipit quae laborum repellendus dolorem sed
                     ex quisquam! Repellat nesciunt neque reiciendis ratione, dicta laboriosam perferendis eaque.</p>
 
-                <img class="w-25 absolute bottom-0 left-[30%] -rotate-28"
-                    src="./Img/Css.png"
-                    alt="Css">
-                <img class="w-25 absolute bottom-0 right-[30%] rotate-28"
-                    src="./Img/Js.png"
-                    alt="JS">
+                <img class="w-25 absolute bottom-0 left-[30%] -rotate-28" src="./Img/Css.png" alt="Css">
+                <img class="w-25 absolute bottom-0 right-[30%] rotate-28" src="./Img/Js.png" alt="JS">
             </section>
 
             <section class="w-[87%] mx-[auto]">
@@ -182,13 +174,42 @@
 
             <section class="w-[87%] mx-[auto] tracking-tight flex justify-between my-10 font-bold text-[1.5rem]">
                 <p>Sandip <span class="font-[400]">Manoj Mishra</span></p>
-                <p>17 Fab , 2025 [8 : 26 PM]</p>
+                <p><span class="Tm_Dt"> 17 Fab , 2025 [8 : 26 PM]</span></p>
             </section>
 
 
 
         </main>
 
+        <script>
+            function TM() {
+                var dt = new Date();
+                var H_M = dt.getHours() % 12 + ":" + dt.getMinutes();
+                dt.getHours() < 13 ? H_M += " AM" : H_M += " PM";
+                console.log(H_M)
+
+                document.querySelector(".Tm").innerHTML = H_M;
+
+            }
+
+            function DT_TM() {
+                var dt2 = new Date();
+                var H_M2 = dt2.getDate() + " / " + (dt2.getMonth() + 1) + " / " + dt2.getFullYear() + " [ " + dt2.getHours() % 12 + ":" + dt2.getMinutes();
+                dt2.getHours() < 13 ? H_M2 += " AM ]" : H_M2 += " PM ]";
+                console.log(H_M2)
+
+                document.querySelector(".Tm_Dt").innerHTML = H_M2;
+            }
+
+            TM();
+            DT_TM();
+
+
+            setInterval(function () {
+                TM();
+                DT_TM();
+            }, 10000)
+        </script>
     </body>
 
 </html>
