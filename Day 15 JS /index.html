@@ -45,6 +45,22 @@
                 border-radius: 50%;
                 filter: blur(70px);
             }
+
+            button {
+                background: lightskyblue;
+                color: black;
+                margin: 50px;
+                padding: 10px;
+                font-size: 4rem;
+            }
+
+            .fancy-button::before {
+                content: "👉 ";
+            }
+
+            .fancy-button::after {
+                content: " 👈";
+            }
         </style>
     </head>
 
@@ -54,9 +70,12 @@
                 <h1>This is some content</h1>
                 <p>More content here.</p>
             </div>
+            <button class="fancy-button">Click Me</button>
 
             <div class="con2"></div>
         </div>
+
+
 
         <script src="./Main.js"></script>
     </body>

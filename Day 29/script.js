@@ -196,10 +196,3 @@
 //     console.log(`Your Year of Service is ${year_of_Servies}`);
 //     console.log(`Your salary is ${salary}`);
 // })()
-
-
-
-let x = 0
-while (x <= 0 ) {
-    x = Number(prompt("Enter Number "))
-}

@@ -1,0 +1,69 @@
+@import url('https: //fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+/* universal sign  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+    /* font-family: gilroy; */
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-size: 16px;
+}
+
+body {
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.main {
+    background: white;
+    padding: 20px 35px;
+    border-radius: 10px;
+
+}
+
+.progreess {
+    width: 800px;
+    height: 30px;
+    background: gray;
+    border-radius: 50px;
+}
+
+.com{
+    height: 100%;
+    width: 0%;
+    background: greenyellow;
+    border-radius: 50px;
+}
+
+.x{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+}
+
+.x span {
+    font-size: 2rem;
+}
+
+.x button{
+    background: greenyellow;
+    padding: 20px;
+    font-size: 1.5rem;
+    border-radius: 50px;
+}
+
+.x button:active {
+scale: 0.8;
+}

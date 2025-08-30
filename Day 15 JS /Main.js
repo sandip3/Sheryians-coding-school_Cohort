@@ -159,6 +159,7 @@
 //   Red: "Stop!"
 //   Yellow: "Get Ready!"
 //   Green: "Go!"
+
 {
     let light = prompt("What is the color of the traffic light (red, yellow, green) ");
 
@@ -191,6 +192,7 @@
 //   70 - 79: C
 //   60 - 69: D
 //   Below 60: F
+
 {
     let marks = prompt("Enter Your Marks ");
 
@@ -213,6 +215,7 @@
 // Set a predefined username and password.
 // Ask the user to enter their credentials using prompt().
 // If correct, print “Login Successful”; otherwise, print “Incorrect username or password.”
+
 {
     let Real_uname = "Sandip";
     let Real_Pword = "Sandip";
@@ -229,6 +232,7 @@
 
 /* Assignment 13: Swapping Without Third Variable */
 // Take two numbers and swap their values without using a third variable.
+
 {
     let a = 20, b = 100;
     console.log("Before swapping: a =", a, ", b =", b);
@@ -299,6 +303,7 @@
 // Ask the user for a word.
 // Check if it reads the same forward and backward.
 // Print “Palindrome” or “Not a Palindrome.”
+
 {
     let word = prompt("Enter a word: ");
     let reversed = "";
