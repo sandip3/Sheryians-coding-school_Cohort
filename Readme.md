@@ -41,8 +41,8 @@ This repository documents my progress in the **Job Ready AI Powered Cohort: Comp
 ### Assignment 3: Blog Website with CSS Styling 🎨 (Day 4)
 * **Technology Used:** HTML, CSS  
 * **Live Links:**  
-  - 🌐 [Netlify](https://sandip-cohort.netlify.app/Day%2004/)  
-  - 🌐 [GitHub Pages](https://sandip3.github.io/Sheryians-coding-school_Cohort/Day%2004/)  
+  - 🌐 [Netlify](https://sandip-cohort.netlify.app/Day%2003/)  
+  - 🌐 [GitHub Pages](https://sandip3.github.io/Sheryians-coding-school_Cohort/Day%2003/)  
 * **Source Code:** [💻 GitHub Repository](./Day%2003)  
 * **Project Preview:**  
   ![CSS Styled Blog Preview](./public/Day%204.gif)
@@ -63,9 +63,9 @@ This repository documents my progress in the **Job Ready AI Powered Cohort: Comp
 ### Assignment 5: Style Blog Website and Form 💅 (Day 6)
 * **Technology Used:** HTML, CSS, Flex, Transition, Animation  
 * **Live Links:**  
-  - 🌐 [Netlify](https://sandip-cohort.netlify.app/Day%2006/)  
-  - 🌐 [GitHub Pages](https://sandip3.github.io/Sheryians-coding-school_Cohort/Day%2006/)  
-* **Source Code:** [💻 GitHub Repository](./Day%2005)  
+  - 🌐 [Netlify](https://sandip-cohort.netlify.app/Day%2003/)  
+  - 🌐 [GitHub Pages](https://sandip3.github.io/Sheryians-coding-school_Cohort/Day%2003/)  
+* **Source Code:** [💻 GitHub Repository](./Day%2003)  
 * **Project Preview:**  
   ![Styled Blog & Form Preview](./public/Day%206%20(Assignment%205%20).gif)
 
@@ -139,7 +139,7 @@ This repository documents my progress in the **Job Ready AI Powered Cohort: Comp
 
 ### Assignment 12: JS Practice Question 🔍 (Day 15)
 * **Technology Used:** HTML, JavaScript  
-* **Source Code:** [💻 GitHub Repository](./Day%2015%20JS)
+* **Source Code:** [💻 GitHub Repository](./Day%2015%20JS%20/)
 
 ---
 
@@ -209,8 +209,8 @@ This repository documents my progress in the **Job Ready AI Powered Cohort: Comp
 ### Assignment 21: Practice Demo: DOM 2 (Extra) 🚀 (Day 38 - 2)
 * **Technology Used:** HTML, CSS, JavaScript  
 * **Live Links:**  
-  - 🌐 [Netlify](https://sandip-cohort.netlify.app/Day%2038-2/)  
-  - 🌐 [GitHub Pages](https://sandip3.github.io/Sheryians-coding-school_Cohort/Day%2038-2/)  
+  - 🌐 [Netlify](https://sandip-cohort.netlify.app/Day%2038%20(Dom%202)/index2.html)  
+  - 🌐 [GitHub Pages](https://sandip3.github.io/Sheryians-coding-school_Cohort/Day%2038%20(Dom%202)/index2.html)  
 * **Source Code:** [💻 GitHub Repository](./Day%2038%20(Dom%202))  
 * **Project Preview:**  
   ![DOM Manipulation Demo Preview](./public/Day%2038%20-%202.gif)
