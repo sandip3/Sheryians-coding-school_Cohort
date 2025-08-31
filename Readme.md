@@ -264,4 +264,14 @@ This repository documents my progress in the **Job Ready AI Powered Cohort: Comp
   ![Live Status](./public/Day%2039%20-%202(4).gif)
 
 ---
+### Assignment 24: Practice Demo: DOM 4 (Advance) 🚀 (Day 44)
 
+- **Technology Used:** HTML, CSS, JavaScript  
+- **Live Links:**  
+  - 🌐 [Netlify](https://sandip-cohort.netlify.app/Day%2044%20(Dom%20Advance)/)  
+  - 🌐 [GitHub Pages](https://sandip3.github.io/Sheryians-coding-school_Cohort/Day%2044%20(Dom%20Advance)/)  
+- **Source Code:** [💻 GitHub Repository](./Day%2044%20(Dom%20Advance))  
+- **Project Preview:**  
+  ![Scroll up to hide and scroll down to show](./public/Day%2044.gif)  
+- **Task:**  
+  - Scroll up to hide and scroll down to show  
