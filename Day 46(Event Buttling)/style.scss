@@ -25,7 +25,7 @@ section {
     position: relative;
 
     h1 {
-        padding: 40px 0;
+        padding-bottom: 60px ;
         font-size: 2.5rem;
         font-weight: 800;
         text-decoration: underline;
@@ -40,7 +40,7 @@ section {
         justify-content: space-evenly;
         align-items: center;
         flex-wrap: wrap;
-        gap: 30px;
+        gap: 40px;
 
         .Profile {
             border: 0;
