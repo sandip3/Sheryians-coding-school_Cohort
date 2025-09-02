@@ -242,9 +242,9 @@ This repository documents my progress in the **Job Ready AI Powered Cohort: Comp
 
 - **Technology Used:** HTML, CSS, JavaScript
 - **Live Links:**
-  - 🌐 [Netlify](https://sandip-cohort.netlify.app/Day%2039%20(DOM%203)/)
-  - 🌐 [GitHub Pages](https://sandip3.github.io/Sheryians-coding-school_Cohort/Day%2039%20(DOM%203)/)
-- **Source Code:** [💻 GitHub Repository](./Day%2039%20(DOM%203))
+  - 🌐 [Netlify](<https://sandip-cohort.netlify.app/Day%2039%20(DOM%203)/>)
+  - 🌐 [GitHub Pages](<https://sandip3.github.io/Sheryians-coding-school_Cohort/Day%2039%20(DOM%203)/>)
+- **Source Code:** [💻 GitHub Repository](<./Day%2039%20(DOM%203)>)
 - **Project Preview:**  
   ![DOM Manipulation Demo Preview](./public/Day%2039.gif)
 
@@ -254,24 +254,43 @@ This repository documents my progress in the **Job Ready AI Powered Cohort: Comp
 
 - **Technology Used:** HTML, CSS, JavaScript
 - **Live Links:**
-  - 🌐 [Netlify](https://sandip-cohort.netlify.app/Day%2039%20(DOM%203)/index2.html)
-  - 🌐 [GitHub Pages](https://sandip3.github.io/Sheryians-coding-school_Cohort/Day%2039%20(DOM%203)/index2.html)
-- **Source Code:** [💻 GitHub Repository](./Day%2039%20(DOM%203))
+  - 🌐 [Netlify](<https://sandip-cohort.netlify.app/Day%2039%20(DOM%203)/index2.html>)
+  - 🌐 [GitHub Pages](<https://sandip3.github.io/Sheryians-coding-school_Cohort/Day%2039%20(DOM%203)/index2.html>)
+- **Source Code:** [💻 GitHub Repository](<./Day%2039%20(DOM%203)>)
 - **Project Preview:**  
-  ![Like Button Effect on post](./public/Day%2039%20-%202(1).gif)  
-  ![Custom Cursor and move it with mouse](./public/Day%2039%20-%202(2).gif)  
-  ![IMG move with mouse on hover](./public/Day%2039%20-%202(3).gif)  
-  ![Live Status](./public/Day%2039%20-%202(4).gif)
+  ![Like Button Effect on post](<./public/Day%2039%20-%202(1).gif>)  
+  ![Custom Cursor and move it with mouse](<./public/Day%2039%20-%202(2).gif>)  
+  ![IMG move with mouse on hover](<./public/Day%2039%20-%202(3).gif>)  
+  ![Live Status](<./public/Day%2039%20-%202(4).gif>)
 
 ---
+
 ### Assignment 24: Practice Demo: DOM 4 (Advance) 🚀 (Day 44)
+
+- **Technology Used:** HTML, CSS, JavaScript
+- **Live Links:**
+  - 🌐 [Netlify](<https://sandip-cohort.netlify.app/Day%2044%20(Dom%20Advance)/>)
+  - 🌐 [GitHub Pages](<https://sandip3.github.io/Sheryians-coding-school_Cohort/Day%2044%20(Dom%20Advance)/>)
+- **Source Code:** [💻 GitHub Repository](<./Day%2044%20(Dom%20Advance)>)
+- **Project Preview:**  
+  ![Scroll up to hide and scroll down to show](./public/Day%2044%20-%201.gif)  
+  ![Image Swap](./public/Day%2044%20-%202.gif)  
+  ![Random Cartoon Placement](./public/Day%2044%20-%203.gif)
+- **Tasks:**
+  - Scroll up to hide and scroll down to show
+  - Image swap on button click
+  - Create element on button click (place cartoon at random location)
+
+---
+
+### Assignment 25: Practice Demo: DOM 5 (Event Bubbling) 🚀 (Day 46)
 
 - **Technology Used:** HTML, CSS, JavaScript  
 - **Live Links:**  
-  - 🌐 [Netlify](https://sandip-cohort.netlify.app/Day%2044%20(Dom%20Advance)/)  
-  - 🌐 [GitHub Pages](https://sandip3.github.io/Sheryians-coding-school_Cohort/Day%2044%20(Dom%20Advance)/)  
-- **Source Code:** [💻 GitHub Repository](./Day%2044%20(Dom%20Advance))  
+  - 🌐 [Netlify](https://sandip-cohort.netlify.app/Day%2046(Event%20Buttling)/)  
+  - 🌐 [GitHub Pages](https://sandip3.github.io/Sheryians-coding-school_Cohort/Day%2046(Event%20Buttling)/)  
+- **Source Code:** [💻 GitHub Repository](./Day%2046%20(Event%20Bubbling))  
 - **Project Preview:**  
-  ![Scroll up to hide and scroll down to show](./public/Day%2044.gif)  
-- **Task:**  
-  - Scroll up to hide and scroll down to show  
+  ![Event Bubbling Preview](./public/Day%2046.gif)  
+- **Tasks:**  
+  - Event Bubbling on a list of Developer Cards  
