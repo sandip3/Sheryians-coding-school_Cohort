@@ -2,10 +2,11 @@
     let btn = document.querySelector("button")
     let progress = document.querySelector(".com")
 
-    let x = 0
-
-
+    
+    
     btn.addEventListener("click", () => {
+        let x = 0
+        
         let ran = (Math.floor(Math.random() * 10) * 10)
         console.log(ran);
         

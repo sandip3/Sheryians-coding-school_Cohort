@@ -294,3 +294,17 @@ This repository documents my progress in the **Job Ready AI Powered Cohort: Comp
   ![Event Bubbling Preview](./public/Day%2046.gif)  
 - **Tasks:**  
   - Event Bubbling on a list of Developer Cards  
+
+---
+### Assignment 26: BOM & DOM 🚀 (Day 48)
+
+- **Technology Used:** HTML, CSS, JavaScript  
+- **Live Links:**  
+  - 🌐 [Netlify](https://sandip-cohort.netlify.app/Day%2048%20(DOM%20&%20BOM)/)  
+  - 🌐 [GitHub Pages](https://sandip3.github.io/Sheryians-coding-school_Cohort/Day%2048%20(DOM%20&%20BOM)/)  
+- **Source Code:** [💻 GitHub Repository](./Day%2048%20(DOM%20&%20BOM))  
+- **Project Preview:**  
+  ![BOM & DOM Project Preview](./public/Day%2048.gif)  
+- **Tasks:**  
+  - Website with light and dark theme toggle using `localStorage` and `classList`  
+
