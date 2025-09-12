@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="./Style/style.css">
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    </head>
+
+    <body>
+
+        <main>
+            <nav>
+                <div class="card">
+                    <div class="serach_div">
+                        <input class="serach" type="text" placeholder="Search ">
+                        <i class="ri-search-2-line"></i>
+                    </div>
+                </div>
+
+                <div class="theme">
+                    <i class="ri-moon-fill"></i>
+                    <i class="ri-sun-fill"></i>
+                </div>
+            </nav>
+
+            <section class="main_content">
+                <div class="card ">
+
+                    <div class="Task_update_filled">
+                        <div class="update_main_div">
+
+                            <p>Current Task <i class="ri-arrow-right-line"></i> <span> Lorem, ipsum. </span></p>
+                            <div>
+                                <input class="update_Filed" type="text" placeholder="Update Task">
+                                <i id="Input_Update_btn" class="ri-add-line add_btn"></i>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div style="width: 100%; display: flex; justify-content: center; ">
+                        <input class="Task_enter_Filed" type="text" placeholder="Enter Task">
+                        <i id="Input_btn" class="ri-add-line add_btn"></i>
+                        <i class="ri-delete-bin-5-fill"></i>
+                    </div>
+
+                    <div class="tasks">
+                        <div class="title">
+                            <span>ID</span>
+                            <span>Task</span>
+                            <span>Action</span>
+                        </div>
+                        <div class="task-grid">
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
+
+        </main>
+        <script src="./JS/Script.js"></script>
+        <script src="./JS/theme.js"></script>
+    </body>
+
+</html>

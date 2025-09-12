@@ -285,26 +285,128 @@ This repository documents my progress in the **Job Ready AI Powered Cohort: Comp
 
 ### Assignment 25: Practice Demo: DOM 5 (Event Bubbling) 🚀 (Day 46)
 
-- **Technology Used:** HTML, CSS, JavaScript  
-- **Live Links:**  
-  - 🌐 [Netlify](https://sandip-cohort.netlify.app/Day%2046(Event%20Buttling)/)  
-  - 🌐 [GitHub Pages](https://sandip3.github.io/Sheryians-coding-school_Cohort/Day%2046(Event%20Buttling)/)  
-- **Source Code:** [💻 GitHub Repository](./Day%2046%20(Event%20Bubbling))  
+- **Technology Used:** HTML, CSS, JavaScript
+- **Live Links:**
+  - 🌐 [Netlify](<https://sandip-cohort.netlify.app/Day%2046(Event%20Buttling)/>)
+  - 🌐 [GitHub Pages](<https://sandip3.github.io/Sheryians-coding-school_Cohort/Day%2046(Event%20Buttling)/>)
+- **Source Code:** [💻 GitHub Repository](<./Day%2046%20(Event%20Bubbling)>)
 - **Project Preview:**  
-  ![Event Bubbling Preview](./public/Day%2046.gif)  
-- **Tasks:**  
-  - Event Bubbling on a list of Developer Cards  
+  ![Event Bubbling Preview](./public/Day%2046.gif)
+- **Tasks:**
+  - Event Bubbling on a list of Developer Cards
 
 ---
+
 ### Assignment 26: BOM & DOM 🚀 (Day 48)
 
-- **Technology Used:** HTML, CSS, JavaScript  
-- **Live Links:**  
-  - 🌐 [Netlify](https://sandip-cohort.netlify.app/Day%2048%20(DOM%20&%20BOM)/)  
-  - 🌐 [GitHub Pages](https://sandip3.github.io/Sheryians-coding-school_Cohort/Day%2048%20(DOM%20&%20BOM)/)  
-- **Source Code:** [💻 GitHub Repository](./Day%2048%20(DOM%20&%20BOM))  
+- **Technology Used:** HTML, CSS, JavaScript
+- **Live Links:**
+  - 🌐 [Netlify](<https://sandip-cohort.netlify.app/Day%2048%20(DOM%20&%20BOM)/>)
+  - 🌐 [GitHub Pages](<https://sandip3.github.io/Sheryians-coding-school_Cohort/Day%2048%20(DOM%20&%20BOM)/>)
+- **Source Code:** [💻 GitHub Repository](<./Day%2048%20(DOM%20&%20BOM)>)
 - **Project Preview:**  
-  ![BOM & DOM Project Preview](./public/Day%2048.gif)  
-- **Tasks:**  
-  - Website with light and dark theme toggle using `localStorage` and `classList`  
+  ![BOM & DOM Project Preview](./public/Day%2048.gif)
+- **Tasks:**
+  - Website with light and dark theme toggle using `localStorage` and `classList`
 
+---
+
+### Assignment 27: BOM & DOM 🚀 (Day 48)
+
+- **Technology Used:** HTML, CSS, JavaScript
+- **Live Links:**
+  - 🌐 [Netlify](<https://sandip-cohort.netlify.app/Day%2048(DOM%20&%20BOM)/>)
+  - 🌐 [GitHub Pages](<https://sandip3.github.io/Sheryians-coding-school_Cohort/Day%2048(DOM%20&%20BOM)/>)
+- **Source Code:** [💻 GitHub Repository](<./Day%2048(DOM%20&%20BOM)/>))
+- **Project Preview:**  
+  ![BOM & DOM Project Preview](./public/Day%2048.gif)
+- **Tasks:**
+  - Website with light and dark theme toggle using `localStorage` and `classList`
+
+---
+
+### To-Do List App ✅ (Self Project)
+
+- **Technology Used:** HTML, SCSS (CSS), JavaScript
+- **Features:**
+
+  - Add new tasks
+  - Update existing tasks
+  - Delete tasks
+  - Mark tasks as complete/incomplete
+  - Clear all tasks at once
+  - Light/Dark theme toggle with `localStorage`
+  - Data persistence using `localStorage`
+
+- **Live Links:**
+
+  - 🌐 [Netlify](<https://sandip-cohort.netlify.app/Day%2048(DOM%20&%20BOM)/Project>)
+  - 🌐 [GitHub Pages](<https://sandip3.github.io/Sheryians-coding-school_Cohort/Day%2048(DOM%20&%20BOM)/Project>)
+
+- **Source Code:** [💻 GitHub Repository](./Day%2048(DOM%20&%20BOM)/Project)
+
+- **Project Preview:**  
+  ![To-Do List Project Preview](./public/Day%2048%20-Project.gif)
+
+- **Tasks Covered:**
+  - Practiced `querySelector`, `addEventListener`, `createElement`, `classList`, `localStorage`
+  - Learned about event handling for add, update, delete, and complete buttons
+  - Used SCSS mixins for layout (`flex`, `center`, `box-shadow`)
+  - Implemented theme toggle (light/dark) with saved preference
+
+---
+
+Perfect 👍 I’ll add **“Personal Notes Manager” (Mini Web App)** in the same short and simple style as your **To-Do List App** entry.
+
+Here’s the updated addition for your record:
+
+---
+
+### Assignment 28: OPP 🚀 (Day 59)
+
+* **Technology Used:** HTML, CSS, JavaScript
+
+* **Source Code:** [💻 GitHub Repository](./Day%2059%20%28OPP%20-%20Micro%20Project%29)
+
+* **Tasks:**
+
+  * Website with light and dark theme toggle using `localStorage` and `classList`
+
+---
+
+Perfect 👍 thanks for the correct repo link.
+Here’s the **final Personal Notes Manager entry** with the updated source code path:
+
+---
+
+### Personal Notes Manager 📝 (Self Project)
+
+* **Technology Used:** HTML, CSS, JavaScript
+
+* **Features:**
+
+  * Add new notes (title + description)
+  * Edit existing notes
+  * Delete notes
+  * Save notes in `localStorage` (data persistence)
+  * Dark/Light theme toggle with `localStorage`
+  * Show browser info: current URL, browser info, notes count
+
+* **Live Links:**
+
+  * 🌐 [Netlify](https://sandip-cohort.netlify.app/Day%2059%20%28OPP%20-%20Micro%20Project%29/Project/)
+  * 🌐 [GitHub Pages](https://sandip3.github.io/Sheryians-coding-school_Cohort/Day%2059%20%28OPP%20-%20Micro%20Project%29/Project/)
+
+* **Source Code:** [💻 GitHub Repository](./Day%2059%20%28OPP%20-%20Micro%20Project%29/Project/)
+
+* **Project Preview:**
+  ![Notes Manager Preview](./public/Day%2059%20-Project.gif)
+
+* **Tasks Covered:**
+
+  * Practiced `querySelector`, `addEventListener`, `createElement`, `classList`, `localStorage`
+  * Implemented add, edit, delete, and save functionality with functions
+  * Used theme toggle (light/dark) with saved preference
+  * Practiced BOM (`location`, `navigator`, `history`)
+
+---

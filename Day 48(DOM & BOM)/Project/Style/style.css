@@ -1,0 +1,294 @@
+/* universal sign  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 16px;
+}
+
+.light_theme {
+  color: black;
+  background: #F8FAFB;
+}
+
+.dark_theme {
+  color: #fff;
+  background: #1D1F20;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+}
+main nav {
+  height: 100px;
+  width: 100%;
+  padding-bottom: 10px;
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+main nav .card {
+  width: 80%;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 30px 0;
+  margin-top: 30px;
+  border-radius: 20px;
+}
+main nav .card .serach_div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+main nav .card .serach_div .serach,
+main nav .card .serach_div i {
+  height: -moz-fit-content;
+  height: fit-content;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  padding: 5px;
+}
+main nav .card .serach_div .serach {
+  border: 1px solid black;
+  width: 80%;
+  padding-left: 20px;
+}
+main nav .card .serach_div .serach:focus {
+  border: 4px solid rgb(190, 230, 71);
+}
+main nav .card i {
+  padding: 5px;
+  font-weight: 700;
+  color: black;
+  background: white;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+main nav .card i:active {
+  scale: 0.7;
+}
+main nav .card i:hover {
+  color: white;
+  background: black;
+}
+main nav .theme {
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 30%;
+  right: 1%;
+}
+main nav .theme i {
+  font-size: 2rem;
+}
+main nav .theme i:active {
+  scale: 0.7;
+}
+main nav .theme .disable {
+  display: none;
+}
+main .main_content {
+  width: 100%;
+  padding: 50px;
+}
+main .main_content .card {
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 30px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+main .main_content .card .Task_update_filled {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: none;
+}
+main .main_content .card .Task_update_filled .update_main_div {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  background: rgba(128, 128, 128, 0.7019607843);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+main .main_content .card .Task_update_filled .update_main_div p {
+  width: 80%;
+  font-size: 1.5rem;
+  padding: 15px 20px;
+  background: white;
+  color: darkslateblue;
+  font-weight: 800;
+  border-radius: 10px;
+}
+main .main_content .card .Task_update_filled .update_main_div p i {
+  border: 0;
+  margin: 0;
+}
+main .main_content .card .Task_update_filled .update_main_div p i:hover {
+  background: white;
+  color: black;
+}
+main .main_content .card .Task_update_filled .update_main_div p span {
+  color: black;
+  font-weight: 400;
+}
+main .main_content .card .Task_update_filled .update_main_div div {
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .main_content .card .Task_update_filled .update_main_div div .update_Filed {
+  width: 90%;
+}
+main .main_content .card input[type=text] {
+  width: 90%;
+  padding: 10px;
+  padding-left: 20px;
+  font-size: 1.2rem;
+  border: 1px solid black;
+  border-radius: 20px;
+}
+main .main_content .card input[type=text]:focus {
+  border: 4px solid rgb(230, 71, 127);
+}
+main .main_content .card i {
+  height: -moz-fit-content;
+  height: fit-content;
+  font-size: 1.7rem;
+  margin-left: 20px;
+  padding: 7px;
+  border: 2px solid black;
+  border-radius: 10px;
+  background: white;
+  color: black;
+}
+main .main_content .card i:hover {
+  color: white;
+  background: black;
+}
+main .main_content .card .tasks {
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-top: 30px;
+  border-radius: 20px;
+  background: #fff;
+  color: #1D1F20;
+}
+main .main_content .card .tasks span {
+  padding: 5px;
+  font-size: 1.2rem;
+  border: 1px solid black;
+  text-align: center;
+}
+main .main_content .card .tasks .title {
+  width: 100%;
+  display: grid;
+  padding: 20px;
+  padding-bottom: 0;
+  font-weight: 700;
+  grid-template-columns: 5% auto 25%;
+  grid-template-rows: repeat(auto-fill, 1fr);
+}
+main .main_content .card .tasks .task-grid {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+main .main_content .card .tasks .task-grid div {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 5% auto 25%;
+  grid-template-rows: repeat(auto-fill, 1fr);
+}
+main .main_content .card .tasks .task-grid div span {
+  font-size: 1.5rem;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .main_content .card .tasks .task-grid div .action_btn {
+  padding-left: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+main .main_content .card .tasks .task-grid div .action_btn button {
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: white;
+}
+main .main_content .card .tasks .task-grid div .action_btn button:active {
+  scale: 0.7;
+}
+main .main_content .card .tasks .task-grid div .action_btn button:hover {
+  background: white;
+  color: black;
+}
+main .main_content .card .tasks .task-grid div .action_btn .update_btn {
+  text-decoration: none;
+  background: rgb(105, 167, 237);
+}
+main .main_content .card .tasks .task-grid div .action_btn .delete_btn {
+  text-decoration: none;
+  color: white;
+  background: rgb(255, 0, 38);
+}
+main .main_content .card .tasks .task-grid div .action_btn .complete_btn {
+  -webkit-text-decoration: solid;
+          text-decoration: solid;
+  color: darkblue;
+  background: lime;
+}
+main .main_content .card .tasks .Task_complete {
+  color: rgb(255, 255, 255);
+  background: rgb(136, 138, 136);
+  font-weight: 900;
+}
+main .main_content .card .tasks .Task_complete .Task_Details {
+  text-decoration: line-through;
+}
+
+.card_light {
+  color: black;
+  background: #FFFFFF;
+  box-shadow: 2px 3px 22px rgb(190, 186, 186);
+}
+
+.card_dark {
+  color: white;
+  background: #47575f;
+  box-shadow: 2px 3px 22px #2a2e2d;
+  border: 2px solid #242424;
+}/*# sourceMappingURL=style.css.map */

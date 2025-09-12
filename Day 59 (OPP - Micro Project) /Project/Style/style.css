@@ -1,0 +1,343 @@
+/* universal sign  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 16px;
+}
+
+:root {
+  --primary: rgb(0, 132, 255);
+  --color: black;
+  --bg: #F8FAFB;
+  --theme_toggle: 5px;
+  --d_shadow:
+      inset 0 2px 7px black,
+      inset 0 -2px 7px rgb(45, 36, 36);
+  --card_bg: rgb(255, 255, 255);
+  --card_color: black;
+}
+
+.dark_theme {
+  --color: #fff;
+  --bg: #1D1F20;
+  --theme_toggle: 53px;
+  --d_shadow:
+      inset 0 2px 7px rgb(198, 201, 203),
+      inset 0 -2px 7px rgb(118, 133, 148);
+  --card_bg: rgb(167, 164, 161);
+}
+
+nav {
+  width: 100vw;
+  padding: 1.5vh 2vw;
+  background: var(--primary);
+  color: var(--color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+}
+nav a {
+  color: var(--color);
+  text-decoration: none;
+}
+nav a h2 {
+  font-size: 1.2rem;
+}
+nav .theme {
+  height: 100%;
+  display: flex;
+  gap: 20px;
+  position: relative;
+  padding: 9px 16px;
+  border-radius: 20px;
+  color: var(--color);
+  background: var(--bg);
+  box-shadow: var(--d_shadow);
+}
+nav .theme i {
+  font-size: 16px;
+}
+nav .theme .theme-blocker {
+  width: 27px;
+  height: 27px;
+  position: absolute;
+  top: 4px;
+  left: var(--theme_toggle);
+  background: var(--color);
+  border-radius: 50%;
+}
+
+.nav-hide {
+  top: -100px;
+}
+
+main {
+  margin-top: 68px;
+  width: 100%;
+  height: 100%;
+  background: var(--bg);
+  position: relative;
+}
+main .update-section {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 90px;
+  background: rgba(128, 128, 128, 0.7);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+main .update-section p {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  background: lightseagreen;
+  border: 2px solid black;
+}
+main .update-section p span {
+  font-weight: 700;
+}
+main .update-section div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+}
+main .update-section div input {
+  width: 85%;
+  padding: 10px;
+  font-size: 1.5rem;
+  border-radius: 10px;
+}
+main .update-section div button {
+  border: 1 solid black;
+  font-size: 1.2rem;
+  padding: 7px 12px;
+  border-radius: 10px;
+  background: yellow;
+}
+main .update-section div button:active {
+  scale: 0.7;
+}
+main .update-section div button:hover {
+  background: #1D1F20;
+  color: white;
+}
+main .container {
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  background: var(--bg);
+  color: var(--color);
+  padding: 2vh 5vw;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 20px;
+  background: transparent;
+}
+main .container .card {
+  width: 100%;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
+  padding: 20px;
+  background: var(--card_bg);
+  color: var(--card_color);
+  overflow: hidden;
+  border-radius: 10px;
+  border: 2px solid black;
+}
+main .container .card h2,
+main .container .card h3 {
+  padding-bottom: 13px;
+}
+main .container .card h2 {
+  text-align: center;
+  font-size: clamp(16px, 1.5rem, 4rem);
+}
+main .container .card h3 {
+  font-size: clamp(16px, 1.3rem, 3rem);
+  text-align: left;
+}
+main .sec-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+main .sec-1 button {
+  color: rgb(255, 0, 43);
+  padding: 7px;
+}
+main .sec-1 button:active {
+  scale: 0.7;
+}
+main .sec-1 button:hover {
+  background: #1D1F20;
+  color: white;
+}
+main .sec-1 button i {
+  font-size: 1.2rem;
+}
+main .sec-1 .back,
+main .sec-1 .forward {
+  background: darkturquoise;
+}
+main .sec-1 .reset {
+  background: yellow;
+}
+main .sec-2 h3 span {
+  font-weight: 100;
+  text-align: justify;
+  word-wrap: break-word;
+}
+main .sec-3 {
+  max-height: 500px;
+}
+main .sec-3 .add-task_section {
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-evenly;
+}
+main .sec-3 .add-task_section input {
+  min-width: 40vw;
+  font-size: 1.5rem;
+  padding: 5px 10px;
+  margin-right: 10px;
+}
+main .sec-3 .add-task_section .add-task {
+  font-size: 1.5rem;
+  padding: 5px 10px;
+  background: var(--primary);
+  color: white;
+}
+main .sec-3 .add-task_section .add-task:active {
+  scale: 0.7;
+}
+main .sec-3 .add-task_section .add-task:hover {
+  background: #1D1F20;
+  color: white;
+}
+main .sec-3 .tasks {
+  font-size: 1.2rem;
+  display: grid;
+  grid-template-columns: 20% 40% 40%;
+  grid-template-rows: 1fr;
+}
+main .sec-3 .tasks .task_title {
+  font-weight: 700;
+  text-align: center;
+  padding: 7px 10px;
+}
+main .sec-3 .tasks .task_collection {
+  width: 100%;
+}
+main .sec-3 .tasks span {
+  padding: 8px;
+  font-size: 1.2rem;
+  border: 1px solid black;
+}
+main .sec-3 .tasks .task {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .sec-3 .tasks .action_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+main .sec-3 .tasks .action_btn button {
+  border: 1 solid black;
+  font-size: 1.2rem;
+  padding: 7px 12px;
+  border-radius: 10px;
+}
+main .sec-3 .tasks .action_btn button:active {
+  scale: 0.7;
+}
+main .sec-3 .tasks .action_btn button:hover {
+  background: #1D1F20;
+  color: white;
+}
+main .sec-3 .tasks .action_btn .edit_btn {
+  background: rgb(91, 235, 91);
+}
+main .sec-3 .tasks .action_btn .rmv_btn {
+  background: red;
+  color: white;
+}
+
+@media (min-width: 600px) {
+  :root {
+    --theme_toggle: 5px;
+  }
+  .dark_theme {
+    --theme_toggle: 56px;
+  }
+  nav a h2 {
+    font-size: clamp(1.2rem, 22px, 2.3rem);
+  }
+  nav .theme i {
+    font-size: 20px;
+  }
+  nav .theme .theme-blocker {
+    height: 30px;
+    width: 30px;
+    left: var(--theme_toggle);
+  }
+  main .sec-3 .add-task_section input {
+    width: 85%;
+  }
+  main .sec-3 .tasks {
+    grid-template-columns: 10% 60% 30%;
+  }
+}
+@media (min-width: 1080px) {
+  :root {
+    --theme_toggle: 5px;
+  }
+  .dark_theme {
+    --theme_toggle: 63px;
+  }
+  nav a h2 {
+    font-size: 2rem;
+  }
+  nav .theme i {
+    font-size: 25px;
+  }
+  nav .theme .theme-blocker {
+    height: 35px;
+    width: 35px;
+    left: var(--theme_toggle);
+  }
+  main .sec-3 .add-task_section input {
+    width: 85%;
+  }
+  main .sec-3 .tasks {
+    grid-template-columns: 7% 68% 25%;
+  }
+}/*# sourceMappingURL=style.css.map */
