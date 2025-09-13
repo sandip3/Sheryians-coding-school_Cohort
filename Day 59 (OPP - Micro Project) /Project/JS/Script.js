@@ -31,7 +31,7 @@
 
 // Navigation button
 {
-    let btn = document.querySelectorAll("button")
+    let btn = document.querySelector(".sec-1").querySelectorAll("button")
 
     btn[0].addEventListener("click", () => {
         history.back()
@@ -129,6 +129,7 @@
     // UPdate Task
 
     let current_id = null
+    let flag = false
 
     function update_task(id) {
         console.log("Update Button Clicked ....");
@@ -148,6 +149,8 @@
         if (!flag) {
             let update_section = document.querySelector(".update-section")
             let btn = update_section.querySelector("button")
+            btn.setAttribute("type" , "button")
+            
 
             btn.addEventListener("click", (e) => {
                 e.preventDefault()
@@ -183,9 +186,9 @@
         console.log("Remove Button Clicked ....");
 
         let local_task = JSON.parse(localStorage.getItem("task")) || []
-        let update_task = local_task.filter(task => task.id !== id)
+        let update_task_data = local_task.filter(task => task.id !== id)
 
-        localStorage.setItem("task", JSON.stringify(update_task))
+        localStorage.setItem("task", JSON.stringify(update_task_data))
 
         view_task()
     }
