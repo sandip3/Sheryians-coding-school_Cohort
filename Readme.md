@@ -356,12 +356,6 @@ This repository documents my progress in the **Job Ready AI Powered Cohort: Comp
 
 ---
 
-Perfect 👍 I’ll add **“Personal Notes Manager” (Mini Web App)** in the same short and simple style as your **To-Do List App** entry.
-
-Here’s the updated addition for your record:
-
----
-
 ### Assignment 28: OPP 🚀 (Day 59)
 
 * **Technology Used:** HTML, CSS, JavaScript
@@ -394,10 +388,10 @@ Here’s the **final Personal Notes Manager entry** with the updated source code
 
 * **Live Links:**
 
-  * 🌐 [Netlify](https://sandip-cohort.netlify.app/Day%2059%20%28OPP%20-%20Micro%20Project%29/Project/)
-  * 🌐 [GitHub Pages](https://sandip3.github.io/Sheryians-coding-school_Cohort/Day%2059%20%28OPP%20-%20Micro%20Project%29/Project/)
+  * 🌐 [Netlify](https://sandip-cohort.netlify.app/Day%2059%20(OPP%20-%20Micro%20Project)%20/Project)
+  * 🌐 [GitHub Pages](https://sandip3.github.io/Sheryians-coding-school_Cohort/Day%2059%20(OPP%20-%20Micro%20Project)%20/Project)
 
-* **Source Code:** [💻 GitHub Repository](./Day%2059%20%28OPP%20-%20Micro%20Project%29/Project/)
+* **Source Code:** [💻 GitHub Repository](./Day%2059%20(OPP%20-%20Micro%20Project)%20/Project)
 
 * **Project Preview:**
   ![Notes Manager Preview](./public/Day%2059%20-Project.gif)
