@@ -1,0 +1,203 @@
+/* universal sign  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Slab", serif;
+  /* font-family: gilroy; */
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 16px;
+}
+
+:root {
+  --bg: white;
+  --text-color: black;
+}
+
+.dark {
+  --bg: #000;
+  --content_bg: #000;
+  --text-color: white;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text-color);
+  padding: 20px;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  background: var(--content_bg);
+  border-radius: 10px;
+}
+nav .main-title {
+  font-size: 2rem;
+  color: transparent;
+  background: linear-gradient(to top, #F78D60, #EA2264, #640D5F, #0D1164);
+  background-clip: text;
+  -webkit-background-clip: text;
+  padding: 7px 10px;
+}
+nav .theme {
+  padding: 5px 10px;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 3s;
+}
+nav .theme i {
+  font-size: 1.8rem;
+  color: var(--text-color);
+}
+nav .theme .ri-sun-fill {
+  display: none;
+}
+
+i {
+  color: #000;
+  font-size: 1.5rem;
+}
+i:active {
+  scale: 0.5;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  background: var(--content_bg);
+  border-radius: 10px;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+main .song-list {
+  width: 100%;
+  padding: 10px;
+  height: clamp(80px, 100%, 500px);
+  overflow-y: scroll;
+  border-radius: 10px;
+  box-shadow: 0 0 4px black;
+  display: flex;
+  flex-direction: column;
+  background: white;
+}
+main .song-list .song {
+  width: 100%;
+  padding: 10px 5px;
+  border-bottom: 1px solid black;
+}
+main .song-list .song:hover {
+  background: #000;
+  color: white;
+}
+main .song-list .song p {
+  text-align: left;
+}
+main .player_display {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+main .player_display .song_img {
+  min-height: 60%;
+  width: 100%;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .player_display .song_img img {
+  width: 100%;
+}
+main .player_display .song_meta-data {
+  background: lightcyan;
+  border-radius: 10px;
+  padding: 7px;
+}
+main .player_display .song_meta-data .Song_name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+}
+main .player_display .song_meta-data span {
+  display: flex;
+  justify-content: space-between;
+  padding: 4px 10px;
+}
+main .player_display .song_meta-data .Song_artist,
+main .player_display .song_meta-data .Song_album,
+main .player_display .song_meta-data .Song_year {
+  color: #5d5b5b;
+  font-size: 0.9rem;
+}
+main .player_display .song_meta-data .Song_artist:hover,
+main .player_display .song_meta-data .Song_album:hover,
+main .player_display .song_meta-data .Song_year:hover {
+  color: #000;
+}
+main .player_display .song_meta-data .Song_album {
+  text-align: center;
+}
+main .player_control {
+  width: 100%;
+  height: 50px;
+  align-content: center;
+  text-align: center;
+  background: lightcyan;
+  border-radius: 10px;
+}
+main .player_control .pause {
+  display: none;
+}
+
+@media (min-width: 600px) {
+  main {
+    height: auto;
+    padding: 0 8vw;
+  }
+  main .song-list {
+    height: clamp(80px, 100%, 500px);
+    font-size: 1.2rem;
+  }
+  main .player_display .song_meta-data .Song_name {
+    font-size: 3rem;
+  }
+  main .player_display .song_meta-data .Song_album,
+  main .player_display .song_meta-data .Song_year,
+  main .player_display .song_meta-data .Song_artist {
+    font-size: 1.5rem;
+  }
+  main .player_display .song_img {
+    height: auto;
+    padding: 10px;
+  }
+  main .player_display .song_img img {
+    width: min(100%, 600px);
+  }
+}
+@media (min-width: 1080px) {
+  main {
+    padding: 0 7vw;
+  }
+  main .player_display .song_img img {
+    width: min(100%, 800px);
+  }
+  main .player_control {
+    margin-top: 0px;
+  }
+}/*# sourceMappingURL=style.css.map */

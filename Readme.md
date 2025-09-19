@@ -311,20 +311,6 @@ This repository documents my progress in the **Job Ready AI Powered Cohort: Comp
 
 ---
 
-### Assignment 27: BOM & DOM 🚀 (Day 48)
-
-- **Technology Used:** HTML, CSS, JavaScript
-- **Live Links:**
-  - 🌐 [Netlify](<https://sandip-cohort.netlify.app/Day%2048(DOM%20&%20BOM)/>)
-  - 🌐 [GitHub Pages](<https://sandip3.github.io/Sheryians-coding-school_Cohort/Day%2048(DOM%20&%20BOM)/>)
-- **Source Code:** [💻 GitHub Repository](<./Day%2048(DOM%20&%20BOM)/>))
-- **Project Preview:**  
-  ![BOM & DOM Project Preview](./public/Day%2048.gif)
-- **Tasks:**
-  - Website with light and dark theme toggle using `localStorage` and `classList`
-
----
-
 ### To-Do List App ✅ (Self Project)
 
 - **Technology Used:** HTML, SCSS (CSS), JavaScript
@@ -343,7 +329,7 @@ This repository documents my progress in the **Job Ready AI Powered Cohort: Comp
   - 🌐 [Netlify](<https://sandip-cohort.netlify.app/Day%2048(DOM%20&%20BOM)/Project>)
   - 🌐 [GitHub Pages](<https://sandip3.github.io/Sheryians-coding-school_Cohort/Day%2048(DOM%20&%20BOM)/Project>)
 
-- **Source Code:** [💻 GitHub Repository](./Day%2048(DOM%20&%20BOM)/Project)
+- **Source Code:** [💻 GitHub Repository](<./Day%2048(DOM%20&%20BOM)/Project>)
 
 - **Project Preview:**  
   ![To-Do List Project Preview](./public/Day%2048%20-Project.gif)
@@ -356,51 +342,45 @@ This repository documents my progress in the **Job Ready AI Powered Cohort: Comp
 
 ---
 
-### Assignment 28: OPP 🚀 (Day 59)
+### Assignment 27: OOP 🚀 (Day 59)
 
-* **Technology Used:** HTML, CSS, JavaScript
-
-* **Source Code:** [💻 GitHub Repository](./Day%2059%20%28OPP%20-%20Micro%20Project%29)
-
-* **Tasks:**
-
-  * Website with light and dark theme toggle using `localStorage` and `classList`
-
----
-
-Perfect 👍 thanks for the correct repo link.
-Here’s the **final Personal Notes Manager entry** with the updated source code path:
+- **Technology Used:** HTML, CSS, JavaScript
+- **Source Code:** [💻 GitHub Repository](<./Day%2059%20(OPP%20-%20Micro%20Project)>)
+- **Tasks:**
+  - Website with light and dark theme toggle using `localStorage` and `classList`
 
 ---
 
 ### Personal Notes Manager 📝 (Self Project)
 
-* **Technology Used:** HTML, CSS, JavaScript
+- **Technology Used:** HTML, CSS, JavaScript
+- **Features:**
 
-* **Features:**
+  - Add and delete personal notes
+  - Notes saved in `localStorage` for persistence
+  - Simple, minimal UI for quick note-taking
 
-  * Add new notes (title + description)
-  * Edit existing notes
-  * Delete notes
-  * Save notes in `localStorage` (data persistence)
-  * Dark/Light theme toggle with `localStorage`
-  * Show browser info: current URL, browser info, notes count
-
-* **Live Links:**
-
-  * 🌐 [Netlify](https://sandip-cohort.netlify.app/Day%2059%20(OPP%20-%20Micro%20Project)%20/Project)
-  * 🌐 [GitHub Pages](https://sandip3.github.io/Sheryians-coding-school_Cohort/Day%2059%20(OPP%20-%20Micro%20Project)%20/Project)
-
-* **Source Code:** [💻 GitHub Repository](./Day%2059%20(OPP%20-%20Micro%20Project)%20/Project)
-
-* **Project Preview:**
-  ![Notes Manager Preview](./public/Day%2059%20-Project.gif)
-
-* **Tasks Covered:**
-
-  * Practiced `querySelector`, `addEventListener`, `createElement`, `classList`, `localStorage`
-  * Implemented add, edit, delete, and save functionality with functions
-  * Used theme toggle (light/dark) with saved preference
-  * Practiced BOM (`location`, `navigator`, `history`)
+- **Source Code:** [💻 GitHub Repository](<./Day%2059%20(OPP%20-%20Micro%20Project)/Project>)
 
 ---
+
+### Music Player (no audio only Functionality) 🎵 (Self Project)
+
+- **Project Name:** Melody Hub - Music Player for You
+- **Technology Used:** HTML, CSS, JavaScript, OOP
+
+- **Features:**
+
+  - Dark/Light theme toggle with `class`
+  - Managing songs with `class`
+  - Managing DOM with `class`
+
+- **Live Links:**
+
+  - 🌐 [Netlify](<https://sandip-cohort.netlify.app/Day%2059%20(OPP%20-%20Micro%20Project)%20/Project%20-%202/index.html>)
+  - 🌐 [GitHub Pages](<https://sandip3.github.io/Sheryians-coding-school_Cohort/Day%2059%20(OPP%20-%20Micro%20Project)%20/Project%20-%202/index.html>)
+
+- **Source Code:** [💻 GitHub Repository](<./Day%2059%20(OPP%20-%20Micro%20Project)%20/Project%20-%202/index.html>)
+
+- **Project Preview:**  
+  ![Notes Manager Preview](./public/Day%2059%20-Project%20-%202%20.gif)

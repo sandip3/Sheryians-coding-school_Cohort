@@ -1,0 +1,262 @@
+@use "./index";
+
+/* universal sign  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+    /* font-family: gilroy; */
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-size: 16px;
+}
+
+:root {
+    --bg: white;
+    --text-color: black;
+
+
+}
+
+.dark {
+    --bg: #000;
+    --content_bg: #000;
+    --text-color: white;
+}
+
+body {
+    background: var(--bg);
+    color: var(--text-color);
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+    flex-direction: column
+}
+
+nav {
+    @include index.Everything_center();
+    justify-content: space-between;
+
+    background: var(--content_bg);
+    border-radius: 10px;
+
+    .main-title {
+        font-size: 2rem;
+        color: transparent;
+        background: linear-gradient(to top, #F78D60, #EA2264, #640D5F, #0D1164);
+
+        background-clip: text;
+        -webkit-background-clip: text;
+
+        padding: 7px 10px;
+    }
+
+    .theme {
+        // background: rebeccapurple;
+        padding: 5px 10px;
+
+        transition: all cubic-bezier(0.19, 1, 0.22, 1) 3s;
+
+        i {
+            font-size: 1.8rem;
+            color: var(--text-color);
+        }
+
+        .ri-sun-fill {
+            display: none;
+        }
+    }
+
+
+}
+
+
+i {
+    color: #000;
+    font-size: 1.5rem;
+
+    &:active {
+        scale: 0.5;
+    }
+}
+
+main {
+    width: 100%;
+    height: 100%;
+
+    padding: 10px;
+    background: var(--content_bg);
+    border-radius: 10px;
+    color: black;
+
+    @include index.Everything_center;
+    flex-direction: column;
+    gap: 20px;
+
+
+    .song-list {
+        width: 100%;
+        padding: 10px;
+        height: clamp(80px, 100%, 500px);
+        overflow-y: scroll;
+        border-radius: 10px;
+        box-shadow: 0 0 4px black;
+        display: flex;
+        flex-direction: column;
+        // gap: 10px;
+        background: white;
+
+        .song {
+            width: 100%;
+            // height: 50px;
+            padding: 10px 5px;
+            border-bottom: 1px solid black;
+            // border-radius: 10px;
+
+            &:hover {
+                background: #000;
+                color: white;
+            }
+
+            p {
+                text-align: left;
+            }
+        }
+    }
+
+    .player_display {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .song_img {
+            min-height: 60%;
+            width: 100%;
+
+            background: #000;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .song_meta-data {
+            background: lightcyan;
+            border-radius: 10px;
+            padding: 7px;
+
+
+            .Song_name {
+                font-size: 1.5rem;
+                font-weight: 700;
+                text-align: center;
+            }
+
+            span {
+                display: flex;
+                justify-content: space-between;
+                padding: 4px 10px;
+            }
+
+            .Song_artist,
+            .Song_album,
+            .Song_year {
+                color: #5d5b5b;
+                font-size: 0.9rem;
+
+                &:hover {
+                    color: #000;
+                }
+            }
+
+            .Song_album {
+                text-align: center;
+            }
+
+        }
+    }
+
+    .player_control {
+        width: 100%;
+        height: 50px;
+        align-content: center;
+        text-align: center;
+
+        background: lightcyan;
+        border-radius: 10px;
+
+        .pause {
+            display: none;
+        }
+
+    }
+
+}
+
+
+@media (min-width: 600px) {
+    main {
+        height: auto;
+        padding: 0 8vw;
+
+        .song-list {
+            height: clamp(80px, 100%, 500px);
+            font-size: 1.2rem;
+        }
+
+        .player_display {
+
+            .song_meta-data {
+                .Song_name {
+                    font-size: 3rem;
+                }
+
+                .Song_album,
+                .Song_year,
+                .Song_artist {
+                    font-size: 1.5rem;
+                }
+
+            }
+
+            .song_img {
+                height: auto;
+                padding: 10px;
+
+                img {
+                    width: min(100%, 600px);
+                }
+            }
+
+        }
+    }
+}
+
+@media (min-width: 1080px) {
+    main {
+        padding: 0 7vw;
+
+        .player_display {
+            .song_img {
+                img {
+                    width: min(100%, 800px);
+                }
+            }
+        }
+
+        .player_control {
+            margin-top: 0px;
+        }
+    }
+}
