@@ -364,7 +364,7 @@ This repository documents my progress in the **Job Ready AI Powered Cohort: Comp
 
 ---
 
-### Music Player (no audio only Functionality) 🎵 (Self Project)
+### Music Player (no audio only Functionality) (Complete Opp) 🎵 (Self Project)
 
 - **Project Name:** Melody Hub - Music Player for You
 - **Technology Used:** HTML, CSS, JavaScript, OOP
@@ -384,3 +384,44 @@ This repository documents my progress in the **Job Ready AI Powered Cohort: Comp
 
 - **Project Preview:**  
   ![Notes Manager Preview](./public/Day%2059%20-Project%20-%202%20.gif)
+
+---
+
+### Assignment 28: Async 🚀 (Day 66)
+
+- **Technology Used:** HTML, CSS, JavaScript  
+- **Source Code:** [💻 GitHub Repository](./Day%2066(%20Async%20)/Task.js)  
+
+- **Tasks:**  
+  - **Simulate a Food Delivery**  
+    - `orderFood()` → returns a promise that resolves after 2s with `🍕 Pizza delivered!`  
+    - Bonus: Chance to reject with `🚫 Delivery failed!`  
+
+  - **Chained Promises: User → Posts → Comments**  
+    - `getUser()` → resolves with `{ id: 1, name: "Sandip" }`  
+    - `getPosts(userId)` → resolves with a list of post titles  
+    - `getComments(postId)` → resolves with comments  
+    - Chain them with `.then()` and log the final output  
+
+  - **Fake API Delay**  
+    - `fakeApiCall(endpoint)` → resolves with dummy data after random delay (1–3 sec)  
+
+---
+
+### Async - Practice (Self Practice)
+
+- **Technology Used:** HTML, CSS, JavaScript  
+- **Source Code:** [💻 GitHub Repository](./Day%2066(%20Async%20)/Practice.js)  
+
+- **Practice Tasks:**  
+
+#### Level 1 (Easy)
+- Fake API with random data (1–2s delay) → resolve based on endpoint (`"user"`, `"posts"`, etc.)  
+- Simulated order process → chain `getOrder() → processPayment() → shipOrder()`  
+- Check weather → chain `getLocation() → getWeather() → getForecast()`  
+- Simple fake API with error handling → resolve for `"data"`, reject for others  
+- Delay between tasks → create `delayTask(ms)` and chain logs  
+
+#### Level 2 (Medium)
+- Chained data fetching (User → Posts → Comments) with step-by-step logs  
+- Retry failed API call → `apiCall()` retries up to 3 times before giving up  
