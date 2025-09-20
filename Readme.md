@@ -390,7 +390,7 @@ This repository documents my progress in the **Job Ready AI Powered Cohort: Comp
 ### Assignment 28: Async 🚀 (Day 66)
 
 - **Technology Used:** HTML, CSS, JavaScript  
-- **Source Code:** [💻 GitHub Repository](./Day%2066(%20Async%20)/Task.js)  
+- **Source Code:** [💻 GitHub Repository](./Day%2066(%20Async%20)%20/Task.js)  
 
 - **Tasks:**  
   - **Simulate a Food Delivery**  
@@ -411,7 +411,7 @@ This repository documents my progress in the **Job Ready AI Powered Cohort: Comp
 ### Async - Practice (Self Practice)
 
 - **Technology Used:** HTML, CSS, JavaScript  
-- **Source Code:** [💻 GitHub Repository](./Day%2066(%20Async%20)/Practice.js)  
+- **Source Code:** [💻 GitHub Repository](https://github.com/sandip3/Sheryians-coding-school_Cohort/blob/main/Day%2066(%20Async%20)%20/Practice.js)  
 
 - **Practice Tasks:**  
 
