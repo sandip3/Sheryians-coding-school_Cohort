@@ -1,0 +1,146 @@
+/* universal sign  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+    /* font-family: gilroy; */
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-size: 16px;
+}
+
+
+body {
+    padding: 0 10vw;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+
+
+
+    .notification {
+        padding: 10px;
+        font-size: 1.2rem;
+        border: 2px solid black;
+        border-radius: 10px;
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        display: none;
+    }
+
+    .notification_error {
+        color: white;
+        background: red;
+    }
+
+    .notification_success {
+        color: #000;
+        background: rgb(26, 250, 78);
+    }
+
+    .github_data_Post {
+        width: 100%;
+        padding: 10px;
+        border: 2px solid black;
+        border-radius: 20px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+
+        input {
+            width: 60%;
+        }
+
+        input,
+        button {
+            padding: 7px 12px;
+            font-size: 1.3rem;
+            border: 2px solid black;
+            border-radius: 10px;
+        }
+
+        button {
+            &:active {
+                scale: 0.7;
+            }
+
+            &:hover {
+                color: white;
+                background: black;
+            }
+        }
+    }
+
+    .github_data_get {
+        width: fit-content;
+        padding: 10px;
+        border: 2px solid black;
+        border-radius: 20px;
+
+        display: grid;
+        grid-template-areas:
+            "a a b b"
+            "c c c c"
+        ;
+
+        img {
+            grid-area: "a";
+            // width: 200px;
+            height: 200px;
+            background: #000;
+            border: 2px solid black;
+            border-radius: 15px;
+            // margin: 0 auto;
+        }
+
+        .Basic_data {
+            padding-left: 10px;
+            display: flex;
+            justify-content: center;
+            // align-items: center;
+            flex-direction: column;
+
+            h3 {
+                text-align: start;
+                font-size: 1.2rem;
+                // padding: 7px;
+            }
+
+            .git_name {
+                font-size: 2rem;
+            }
+
+            .git_nickname{
+                font-size: 1.5rem;
+            }
+
+            .follower,
+            .following {
+                font-size: 1.3rem;
+            }
+
+            .follower {
+                color: red;
+            }
+
+            .following {
+                color: blueviolet;
+            }
+
+            .Tot_repo {
+                font-size: 1.5rem;
+            }
+        }
+    }
+}

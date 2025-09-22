@@ -1,0 +1,115 @@
+/* universal sign  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Slab", serif;
+  /* font-family: gilroy; */
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 16px;
+}
+
+body {
+  padding: 0 10vw;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+body .notification {
+  padding: 10px;
+  font-size: 1.2rem;
+  border: 2px solid black;
+  border-radius: 10px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  display: none;
+}
+body .notification_error {
+  color: white;
+  background: red;
+}
+body .notification_success {
+  color: #000;
+  background: rgb(26, 250, 78);
+}
+body .github_data_Post {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+body .github_data_Post input {
+  width: 60%;
+}
+body .github_data_Post input,
+body .github_data_Post button {
+  padding: 7px 12px;
+  font-size: 1.3rem;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+body .github_data_Post button:active {
+  scale: 0.7;
+}
+body .github_data_Post button:hover {
+  color: white;
+  background: black;
+}
+body .github_data_get {
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 20px;
+  display: grid;
+  grid-template-areas: "a a b b" "c c c c";
+}
+body .github_data_get img {
+  grid-area: "a";
+  height: 200px;
+  background: #000;
+  border: 2px solid black;
+  border-radius: 15px;
+}
+body .github_data_get .Basic_data {
+  padding-left: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+body .github_data_get .Basic_data h3 {
+  text-align: start;
+  font-size: 1.2rem;
+}
+body .github_data_get .Basic_data .git_name {
+  font-size: 2rem;
+}
+body .github_data_get .Basic_data .git_nickname {
+  font-size: 1.5rem;
+}
+body .github_data_get .Basic_data .follower,
+body .github_data_get .Basic_data .following {
+  font-size: 1.3rem;
+}
+body .github_data_get .Basic_data .follower {
+  color: red;
+}
+body .github_data_get .Basic_data .following {
+  color: blueviolet;
+}
+body .github_data_get .Basic_data .Tot_repo {
+  font-size: 1.5rem;
+}/*# sourceMappingURL=style.css.map */

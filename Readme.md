@@ -389,39 +389,64 @@ This repository documents my progress in the **Job Ready AI Powered Cohort: Comp
 
 ### Assignment 28: Async 🚀 (Day 66)
 
-- **Technology Used:** HTML, CSS, JavaScript  
-- **Source Code:** [💻 GitHub Repository](./Day%2066(%20Async%20)%20/Task.js)  
+- **Technology Used:** HTML, CSS, JavaScript
+- **Source Code:** [💻 GitHub Repository](<./Day%2066(%20Async%20)%20/Task.js>)
 
-- **Tasks:**  
-  - **Simulate a Food Delivery**  
-    - `orderFood()` → returns a promise that resolves after 2s with `🍕 Pizza delivered!`  
-    - Bonus: Chance to reject with `🚫 Delivery failed!`  
+- **Tasks:**
 
-  - **Chained Promises: User → Posts → Comments**  
-    - `getUser()` → resolves with `{ id: 1, name: "Sandip" }`  
-    - `getPosts(userId)` → resolves with a list of post titles  
-    - `getComments(postId)` → resolves with comments  
-    - Chain them with `.then()` and log the final output  
+  - **Simulate a Food Delivery**
 
-  - **Fake API Delay**  
-    - `fakeApiCall(endpoint)` → resolves with dummy data after random delay (1–3 sec)  
+    - `orderFood()` → returns a promise that resolves after 2s with `🍕 Pizza delivered!`
+    - Bonus: Chance to reject with `🚫 Delivery failed!`
+
+  - **Chained Promises: User → Posts → Comments**
+
+    - `getUser()` → resolves with `{ id: 1, name: "Sandip" }`
+    - `getPosts(userId)` → resolves with a list of post titles
+    - `getComments(postId)` → resolves with comments
+    - Chain them with `.then()` and log the final output
+
+  - **Fake API Delay**
+    - `fakeApiCall(endpoint)` → resolves with dummy data after random delay (1–3 sec)
 
 ---
 
 ### Async - Practice (Self Practice)
 
-- **Technology Used:** HTML, CSS, JavaScript  
-- **Source Code:** [💻 GitHub Repository](https://github.com/sandip3/Sheryians-coding-school_Cohort/blob/main/Day%2066(%20Async%20)%20/Practice.js)  
+- **Technology Used:** HTML, CSS, JavaScript
+- **Source Code:** [💻 GitHub Repository](<https://github.com/sandip3/Sheryians-coding-school_Cohort/blob/main/Day%2066(%20Async%20)%20/Practice.js>)
 
-- **Practice Tasks:**  
+- **Practice Tasks:**
 
 #### Level 1 (Easy)
-- Fake API with random data (1–2s delay) → resolve based on endpoint (`"user"`, `"posts"`, etc.)  
-- Simulated order process → chain `getOrder() → processPayment() → shipOrder()`  
-- Check weather → chain `getLocation() → getWeather() → getForecast()`  
-- Simple fake API with error handling → resolve for `"data"`, reject for others  
-- Delay between tasks → create `delayTask(ms)` and chain logs  
+
+- Fake API with random data (1–2s delay) → resolve based on endpoint (`"user"`, `"posts"`, etc.)
+- Simulated order process → chain `getOrder() → processPayment() → shipOrder()`
+- Check weather → chain `getLocation() → getWeather() → getForecast()`
+- Simple fake API with error handling → resolve for `"data"`, reject for others
+- Delay between tasks → create `delayTask(ms)` and chain logs
 
 #### Level 2 (Medium)
-- Chained data fetching (User → Posts → Comments) with step-by-step logs  
-- Retry failed API call → `apiCall()` retries up to 3 times before giving up  
+
+- Chained data fetching (User → Posts → Comments) with step-by-step logs
+- Retry failed API call → `apiCall()` retries up to 3 times before giving up
+
+---
+
+### Assignment 29: Async - Fetch 🚀 (Day 67)
+- **GitHub Profile Finder Preview**
+- **Technology Used:** HTML, CSS, JavaScript  
+
+- **Tasks:**  
+  - Built a **GitHub Profile Finder**  
+    - Enter username → fetch GitHub API data  
+    - Display profile details: name, username, followers, following, etc.  
+
+- **Live Links:**  
+  - 🌐 [Netlify](https://sandip-cohort.netlify.app/Day%2067(%20Async%20-%204%20)%20(Github%20Status%20Repo%20Project)/)  
+  - 🌐 [GitHub Pages](https://sandip3.github.io/Sheryians-coding-school_Cohort/Day%2067(%20Async%20-%204%20)%20(Github%20Status%20Repo%20Project)/)  
+
+- **Source Code:** [💻 GitHub Repository](./Day%2067(%20Async%20-%204%20)%20(Github%20Status%20Repo%20Project)/)  
+
+- **Project Preview:**  
+  ![GitHub Profile Finder Preview](./public/Day%2067%20(async%20-%204%20-%20%20SElf%20Made).gif)
