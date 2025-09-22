@@ -434,19 +434,48 @@ This repository documents my progress in the **Job Ready AI Powered Cohort: Comp
 ---
 
 ### Assignment 29: Async - Fetch 🚀 (Day 67)
+
 - **GitHub Profile Finder Preview**
+- **Technology Used:** HTML, CSS, JavaScript
+
+- **Tasks:**
+
+  - Built a **GitHub Profile Finder**
+    - Enter username → fetch GitHub API data
+    - Display profile details: name, username, followers, following, etc.
+
+- **Live Links:**
+
+  - 🌐 [Netlify](<https://sandip-cohort.netlify.app/Day%2067(%20Async%20-%204%20)%20(Github%20Status%20Repo%20Project)/>)
+  - 🌐 [GitHub Pages](<https://sandip3.github.io/Sheryians-coding-school_Cohort/Day%2067(%20Async%20-%204%20)%20(Github%20Status%20Repo%20Project)/>)
+
+- **Source Code:** [💻 GitHub Repository](<./Day%2067(%20Async%20-%204%20)%20(Github%20Status%20Repo%20Project)/>)
+
+- **Project Preview:**  
+  ![GitHub Profile Finder Preview](<./public/Day%2067%20(async%20-%204%20-%20%20SElf%20Made).gif>)
+
+---
+
+### Assignment 30: GitHub Profile Finder 🚀 (Day 68)
+
 - **Technology Used:** HTML, CSS, JavaScript  
 
 - **Tasks:**  
-  - Built a **GitHub Profile Finder**  
-    - Enter username → fetch GitHub API data  
-    - Display profile details: name, username, followers, following, etc.  
+  - Built a **GitHub Profile Finder** using the GitHub API  
+    - Enter username → fetch GitHub profile data  
+    - Display details: Name, Username, Followers, Following, Public Repositories  
+    - Handle invalid usernames with error message  
+
+- **Tasks Covered:**  
+  - Practiced `fetch()` with APIs  
+  - DOM manipulation for dynamic profile display  
+  - Basic error handling  
 
 - **Live Links:**  
-  - 🌐 [Netlify](https://sandip-cohort.netlify.app/Day%2067(%20Async%20-%204%20)%20(Github%20Status%20Repo%20Project)/)  
-  - 🌐 [GitHub Pages](https://sandip3.github.io/Sheryians-coding-school_Cohort/Day%2067(%20Async%20-%204%20)%20(Github%20Status%20Repo%20Project)/)  
+  - 🌐 [Netlify](https://sandip-cohort.netlify.app/Day%2068%20(Github%20Profile%20finder)/)  
+  - 🌐 [GitHub Pages](https://sandip3.github.io/Sheryians-coding-school_Cohort/Day%2068%20(Github%20Profile%20finder)/)  
 
-- **Source Code:** [💻 GitHub Repository](./Day%2067(%20Async%20-%204%20)%20(Github%20Status%20Repo%20Project)/)  
+- **Source Code:** [💻 GitHub Repository](./Day%2068%20(Github%20Profile%20finder)/)  
 
 - **Project Preview:**  
-  ![GitHub Profile Finder Preview](./public/Day%2067%20(async%20-%204%20-%20%20SElf%20Made).gif)
+  ![GitHub Profile Finder Preview](./public/Day%2068.gif)

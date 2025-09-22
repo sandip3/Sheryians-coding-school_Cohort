@@ -14,11 +14,30 @@ let following = document.querySelector(".following")
 let total_repo = document.querySelector(".Tot_repo")
 let top_repo_section = document.querySelector(".top_repo_section")
 
-git_view.style.display = "none";
+function remove_scaleton() {
+    img.classList.remove("skeleton")
+    nickname.classList.remove("skeleton")
+    g_name.classList.remove("skeleton")
+    follower.classList.remove("skeleton")
+    following.classList.remove("skeleton")
+    total_repo.classList.remove("skeleton")
+    top_repo_section.classList.remove("skeleton")
+}
+
+function add_scaleton() {
+    img.classList.add("skeleton")
+    nickname.classList.add("skeleton")
+    g_name.classList.add("skeleton")
+    follower.classList.add("skeleton")
+    following.classList.add("skeleton")
+    total_repo.classList.add("skeleton")
+    // top_repo_section.classList.add("skeleton")
+}
 
 input_btn.addEventListener("click", (x) => {
     x.preventDefault()
     git_data_fetching()
+
 })
 
 input_txt.addEventListener("keydown", (x) => {
@@ -63,9 +82,10 @@ function git_data_fetching() {
                 notification.classList.remove("notification_success")
                 console.log("3 Sec Finish");
             }, 5000)
+
+            remove_scaleton()
         })
         .catch((x) => {
-            git_view.style.display = "none"
 
             notification.innerHTML = x
             notification.style.display = 'block'
@@ -76,6 +96,13 @@ function git_data_fetching() {
                 notification.classList.remove("notification_error")
                 console.log("3 Sec Finish");
             }, 5000)
+
+            img.src = ``
+            document.querySelectorAll("h3").forEach((x) => {
+                x.textContent = ""
+            })
+
+            add_scaleton()
         })
     input_txt.value = ""
 

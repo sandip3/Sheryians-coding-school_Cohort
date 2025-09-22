@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>GitHub Profile Finder</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <span class="notification"></span>
+
+        <div class="github_data_Post">
+            <input class="text" type="text" placeholder="Enter GitHub Username" />
+            <button class="input_btn">Search Profile</button>
+        </div>
+
+        <div class="github_data_get" style="display:none;">
+            <div class="profile_section skeleton">
+                <img src="" alt="Profile Picture" />
+                <div class="Basic_data" style="display:none;">
+                    <h3 class="git_nickname"></h3>
+                    <h3 class="git_name small-txt"></h3>
+                    <h3 class="Bio"></h3>
+
+                    <span class="about_me">
+                        <h3 class="Tot_repo">Public Repos: <span class="small-txt"></span></h3>
+                        <h3 class="follower">Followers: <span class="small-txt"></span></h3>
+                        <h3 class="following">Following: <span class="small-txt"></span></h3>
+                        <h3 class="location">Location: <span class="small-txt"></span></h3>
+                    </span>
+
+                    <span class="extra_data">
+                        <h3 class="company">Company: <span class="small-txt"></span></h3>
+                        <h3 class="blog">Blog: <span class="small-txt"></span></h3>
+                    </span>
+                </div>
+            </div>
+
+            <div class="top_repo_section skeleton" style="display:none;">
+                <h2>Repositories</h2>
+                <div class="repo_list"></div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+
+</html>
