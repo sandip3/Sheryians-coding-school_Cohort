@@ -1,0 +1,74 @@
+:root {
+    --color_1: #3F72AF;
+    --color_2: #F9F7F7;
+    --color_3: #DBE2EF;
+    --color_4: #112D4E;
+    --border: 1px solid black;
+}
+
+.dark {
+    --color_3: #0A2647;
+    --color_1: #144272;
+    --color_2: #205295;
+    --color_4: #ffffff;
+    --border: 1px solid yellow;
+}
+
+.red {
+    --color_1: #355C7D;
+    --color_2: #C06C84;
+    --color_3: #F67280;
+    --color_4: #6C5B7B;
+    --border: 1px solid black;
+}
+
+.dark_red {
+    --color_1: #903749;
+    --color_2: #53354A;
+    --color_3: #2B2E4A;
+    --color_4: #E84545;
+    --border: 1px solid #f51441;
+}
+
+.blue {
+    --color_1: #222831;
+    --color_2: #393E46;
+    --color_3: #06b7c0;
+    --color_4: #EEEEEE;
+    --border: 1px solid black;
+}
+
+.dark_blue {
+    --color_1: #08D9D6;
+    --color_2: #FF2E63;
+    --color_3: #252A34;
+    --color_4: #EAEAEA;
+    --border: 1px solid #00e5ff;
+}
+
+.cool {
+    --color_1: #2B2E4A;
+    --color_2: #53354A;
+    --color_3: #903749;
+    --color_4: #d7c6c6;
+    --border: 1px solid black;
+}
+
+
+@font-face {
+    font-family: aeonik;
+    font-weight: 300;
+    src: url(./Font/AeonikTRIAL-Light.otf);
+}
+
+@font-face {
+    font-family: aeonik;
+    font-weight: 500;
+    src: url(./Font/AeonikTRIAL-Regular.otf);
+}
+
+@font-face {
+    font-family: aeonik;
+    font-weight: 700;
+    src: url(./Font/AeonikTRIAL-Bold.otf);
+}
