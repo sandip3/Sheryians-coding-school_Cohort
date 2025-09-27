@@ -458,24 +458,58 @@ This repository documents my progress in the **Job Ready AI Powered Cohort: Comp
 
 ### Assignment 30: GitHub Profile Finder 🚀 (Day 68)
 
-- **Technology Used:** HTML, CSS, JavaScript  
+- **Technology Used:** HTML, CSS, JavaScript
 
-- **Tasks:**  
-  - Built a **GitHub Profile Finder** using the GitHub API  
-    - Enter username → fetch GitHub profile data  
-    - Display details: Name, Username, Followers, Following, Public Repositories  
-    - Handle invalid usernames with error message  
+- **Tasks:**
 
-- **Tasks Covered:**  
-  - Practiced `fetch()` with APIs  
-  - DOM manipulation for dynamic profile display  
-  - Basic error handling  
+  - Built a **GitHub Profile Finder** using the GitHub API
+    - Enter username → fetch GitHub profile data
+    - Display details: Name, Username, Followers, Following, Public Repositories
+    - Handle invalid usernames with error message
 
-- **Live Links:**  
-  - 🌐 [Netlify](https://sandip-cohort.netlify.app/Day%2068%20(Github%20Profile%20finder)/)  
-  - 🌐 [GitHub Pages](https://sandip3.github.io/Sheryians-coding-school_Cohort/Day%2068%20(Github%20Profile%20finder)/)  
+- **Tasks Covered:**
 
-- **Source Code:** [💻 GitHub Repository](./Day%2068%20(Github%20Profile%20finder)/)  
+  - Practiced `fetch()` with APIs
+  - DOM manipulation for dynamic profile display
+  - Basic error handling
+
+- **Live Links:**
+
+  - 🌐 [Netlify](<https://sandip-cohort.netlify.app/Day%2068%20(Github%20Profile%20finder)/>)
+  - 🌐 [GitHub Pages](<https://sandip3.github.io/Sheryians-coding-school_Cohort/Day%2068%20(Github%20Profile%20finder)/>)
+
+- **Source Code:** [💻 GitHub Repository](<./Day%2068%20(Github%20Profile%20finder)/>)
 
 - **Project Preview:**  
   ![GitHub Profile Finder Preview](./public/Day%2068.gif)
+
+---
+
+### Assignment 31: Productivity Dashboard 🚀 (Mega Project)
+
+- **Technology Used:** HTML, CSS, SCSS, JavaScript  
+
+- **Tasks:**  
+  - 7 themes (3 dark/light, 1 light only)  
+  - **Main Menu Features:**  
+    - **Weather Status** → Fetched using Weather API  
+    - **Task List** → Stored & retrieved from `localStorage`  
+    - **Schedule Planner (Daily Planner)** → Stored & retrieved from `localStorage`  
+    - **Motivational Quotes** → Fetched using Quotes API  
+    - **Pomodoro Timer** → 25 min work + 5 min break (looped sessions)  
+    - **Daily Goals** → Stored & retrieved from `localStorage`  
+
+- **APIs Used:**  
+  - Weather: [weatherapi.com](https://www.weatherapi.com)  
+  - Quotes: [Quotable API](https://github.com/lukePeavey/quotable)  
+
+- **Live Links:**  
+  - 🌐 [Netlify](https://sandip-cohort.netlify.app/Day%2068.5%20-Mega%20Project/)  
+  - 🌐 [GitHub Pages](https://sandip3.github.io/Sheryians-coding-school_Cohort/Day%2068.5%20-Mega%20Project/)  
+
+- **Source Code:** [💻 GitHub Repository](./Day%2068.5%20-Mega%20Project/)  
+
+- **Project Preview:**  
+  ![Productivity Dashboard Preview](./public/Day%2068.5%20.gif)
+
+---
