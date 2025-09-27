@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 :root {
   --color_1: #3F72AF;
   --color_2: #F9F7F7;
@@ -6,7 +13,7 @@
   --border: 1px solid black;
 }
 
-.dark {
+.dark_default {
   --color_3: #0A2647;
   --color_1: #144272;
   --color_2: #205295;
@@ -55,24 +62,31 @@
 }
 
 @font-face {
-  font-family: aeonik;
   font-weight: 300;
-  src: url(./Font/AeonikTRIAL-Light.otf);
-}
-@font-face {
+  font-display: swap;
   font-family: aeonik;
+  src: url(./Font/AeonikTRIAL-Light.woff), url(./Font/AeonikTRIAL-Light.woff2);
+}
+
+@font-face {
   font-weight: 500;
-  src: url(./Font/AeonikTRIAL-Regular.otf);
-}
-@font-face {
+  font-display: swap;
   font-family: aeonik;
-  font-weight: 700;
-  src: url(./Font/AeonikTRIAL-Bold.otf);
+  src: url(./Font/AeonikTRIAL-Regular.woff), url(./Font/AeonikTRIAL-Regular.woff2);
 }
+
+@font-face {
+  font-weight: 700;
+  font-display: swap;
+  font-family: aeonik;
+  src: url(./Font/AeonikTRIAL-Bold.woff), url(./Font/AeonikTRIAL-Bold.woff2);
+}
+
 /* universal sign  */
 * {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   font-family: aeonik;
   /* font-family: gilroy; */
@@ -85,113 +99,1218 @@ body {
   font-size: 16px;
 }
 
-main {
+body main {
   width: 100%;
-  height: 100%;
+  min-height: 100%;
   background: var(--color_3);
+  position: relative;
 }
-main nav {
-  z-index: 1;
+
+body main nav {
+  z-index: 10;
   width: 100%;
   height: 70px;
+  padding: 5px 20px;
   position: fixed;
   background: var(--color_1);
-}
-main .all_tasks_viwer {
-  width: 100%;
-  height: 100%;
-  padding: 40px;
-  padding-top: 100px;
-  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: flex-start;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-right: 20px;
+}
+
+body main nav h2 {
+  font-size: 2.5rem;
+  margin-left: 10px;
+}
+
+body main nav .theme {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 15px;
+}
+
+body main nav .theme .theme_type {
+  position: relative;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  -webkit-box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  -webkit-transition: -webkit-transform 0.2s ease, -webkit-box-shadow 0.2s ease;
+  transition: -webkit-transform 0.2s ease, -webkit-box-shadow 0.2s ease;
+  -o-transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, -webkit-transform 0.2s ease, -webkit-box-shadow 0.2s ease;
+}
+
+body main nav .theme .theme_type:hover {
+  -webkit-transform: scale(1.15);
+  -ms-transform: scale(1.15);
+  transform: scale(1.15);
+  -webkit-box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+}
+
+body main nav .theme .theme_type:active {
+  scale: 0.8;
+}
+
+body main nav .theme .theme_type::after {
+  content: attr(data-theme);
+  position: absolute;
+  bottom: -28px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  background: #333;
+  color: #fff;
+  font-size: 11px;
+  padding: 3px 8px;
+  border-radius: 4px;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: opacity 0.2s ease;
+  -o-transition: opacity 0.2s ease;
+  transition: opacity 0.2s ease;
+  white-space: nowrap;
+}
+
+body main nav .theme .theme_type:hover::after {
+  opacity: 1;
+}
+
+body main nav .theme .theme_type.default {
+  background: #3e8ff2;
+}
+
+body main nav .theme .theme_type.red {
+  background: #f51441;
+}
+
+body main nav .theme .theme_type.blue {
+  background: #00e5ff;
+}
+
+body main nav .theme .theme_type.cool {
+  background: #b172ff;
+}
+
+body main nav .theme .light_dark {
+  width: 45px;
+  height: 24px;
+  background: #ccc;
+  border-radius: 30px;
+  position: relative;
+  cursor: pointer;
+  -webkit-transition: background 0.3s ease;
+  -o-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+}
+
+body main nav .theme .light_dark::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 2px;
+  left: 2px;
+  background: white;
+  border-radius: 50%;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  -o-transition: transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+
+body main nav .theme .light_dark.dark {
+  background: #333;
+}
+
+body main nav .theme .light_dark.dark::before {
+  -webkit-transform: translateX(21px);
+  -ms-transform: translateX(21px);
+  transform: translateX(21px);
+}
+
+body main nav .theme .light_dark.disabled {
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+body main .top_section {
+  min-height: 100vh;
+  padding: 40px;
+}
+
+body main .top_section header {
+  width: 100%;
+  height: 400px;
+  margin-top: 60px;
+  padding: 40px;
+  border-radius: 30px;
+  background: url("./Public/+Background/sky.jpeg");
+  background-size: cover;
+  background-position: center;
+  color: #222831;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+body main .top_section header .left h1 {
+  font-size: 2rem;
+}
+
+body main .top_section header .left h4 {
+  font-size: 1.3rem;
+}
+
+body main .top_section header .right h2 {
+  font-size: 1.5rem;
+}
+
+body main .top_section header .right h3 {
+  font-size: 1.3rem;
+}
+
+body main .top_section header .right h4 {
+  font-size: 1.2rem;
+}
+
+body main .top_section .all_tasks_viwer {
+  width: 100%;
+  min-height: 100%;
+  padding: 40px;
+  padding-top: 50px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   gap: 40px;
 }
-main .all_tasks_viwer .tasks_viwer {
-  width: 300px;
-  height: 300px;
+
+body main .top_section .all_tasks_viwer .tasks_viwer {
+  width: 150px;
+  height: 150px;
   border-radius: 20px;
   position: relative;
+  -webkit-transition: all 0.1s ease-out;
+  -o-transition: all 0.1s ease-out;
   transition: all 0.1s ease-out;
   overflow: hidden;
+  -webkit-box-shadow: 7px 7px 20px var(--color_1);
   box-shadow: 7px 7px 20px var(--color_1);
 }
-main .all_tasks_viwer .tasks_viwer img {
-  width: 100%;
-  height: 100%;
+
+body main .top_section .all_tasks_viwer .tasks_viwer img {
+  width: 120px;
+  height: 120px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 30px;
 }
-main .all_tasks_viwer .tasks_viwer h2 {
+
+body main .top_section .all_tasks_viwer .tasks_viwer h2 {
+  width: 84%;
   font-size: 1.7rem;
   position: absolute;
   right: 3%;
   bottom: 3%;
   color: var(--color_4);
   font-weight: 700;
+  text-align: right;
 }
-main .all_tasks_viwer .tasks_viwer:hover {
+
+body main .top_section .all_tasks_viwer .tasks_viwer:hover {
   color: black !important;
   background: white;
   scale: 1.1;
 }
-main .all_tasks_viwer .tasks_viwer:hover:active {
+
+body main .top_section .all_tasks_viwer .tasks_viwer:hover:active {
   scale: 0.8;
 }
-main .all_tasks_viwer .tasks_viwer:hover h2 {
+
+body main .top_section .all_tasks_viwer .tasks_viwer:hover h2 {
   right: 5%;
   bottom: 5%;
   color: black;
 }
-main .all_task {
+
+body main .top_section .all_task {
   width: 100%;
   height: 100%;
 }
-main .all_task .task {
+
+body main .top_section .all_task .task {
   width: 100%;
-  height: 100%;
-  padding: 40px;
+  min-height: 100%;
+  padding: 10px;
   padding-top: 100px;
   background: var(--color_3);
   display: none;
   position: absolute;
+  top: 0;
+  left: 0;
 }
-main .all_task .task .top {
+
+body main .top_section .all_task .task .top {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
-main .all_task .task .top h2 {
+
+body main .top_section .all_task .task .top h2 {
   font-weight: 700;
-  font-size: 2rem;
-  color: var(--color_4);
+  font-size: clamp(1.2rem, 5vw, 3rem);
+  color: var(--color_1);
 }
-main .all_task .task .top button {
+
+body main .top_section .all_task .task .top button {
   padding: 7px;
   font-size: 1.2rem;
   background: red;
   color: white;
   border: var(--border);
   border-radius: 50px;
+  -webkit-transition: all ease-out 0.3s;
+  -o-transition: all ease-out 0.3s;
   transition: all ease-out 0.3s;
   cursor: pointer;
 }
-main .all_task .task .top button span {
+
+body main .top_section .all_task .task .top button span {
   display: none;
 }
-main .all_task .task .top button:active {
+
+body main .top_section .all_task .task .top button:active {
   scale: 0.8;
 }
-main .all_task .task .top button:hover {
+
+body main .top_section .all_task .task .top button:hover {
   padding: 7px 15px;
   color: white;
   background: black;
+  -webkit-box-shadow: 2px 2px 5px gold;
   box-shadow: 2px 2px 5px gold;
 }
-main .all_task .task .top button:hover span {
+
+body main .top_section .all_task .task .top button:hover span {
   display: block;
   display: inline-block;
-}/*# sourceMappingURL=style.css.map */
+}
+
+body main .top_section .all_task .todo {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+body main .top_section .all_task .todo .main {
+  width: 98%;
+}
+
+body main .top_section .all_task .todo .main .input_section {
+  padding: 20px;
+  padding-top: 40px;
+  margin-top: 30px;
+  background: var(--color_1);
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 20px;
+}
+
+body main .top_section .all_task .todo .main .input_section input {
+  font-size: 1.2rem;
+}
+
+body main .top_section .all_task .todo .main .input_section textarea {
+  resize: vertical;
+}
+
+body main .top_section .all_task .todo .main .input_section input,
+body main .top_section .all_task .todo .main .input_section textarea {
+  -ms-grid-column-align: center;
+  justify-self: center;
+  display: block;
+  width: 100%;
+  padding: 10px 15px;
+  border-radius: 10px;
+  outline: none;
+}
+
+body main .top_section .all_task .todo .main .input_section div {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+body main .top_section .all_task .todo .main .input_section div input {
+  width: 20px;
+  height: 20px;
+  accent-color: #a6ff00;
+}
+
+body main .top_section .all_task .todo .main .input_section div label {
+  font-size: 1.2rem;
+  padding-left: 30px;
+}
+
+body main .top_section .all_task .todo .main .input_section button {
+  font-size: 1.1rem;
+  font-weight: 700;
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
+  width: fit-content;
+  background: #EEEEEE;
+  padding: 10px 15px;
+  border-radius: 15px;
+  -webkit-transition: all ease-out 0.1s;
+  -o-transition: all ease-out 0.1s;
+  transition: all ease-out 0.1s;
+}
+
+body main .top_section .all_task .todo .main .input_section button:hover {
+  scale: 1.1;
+  outline: none;
+  color: black;
+  background: #1aff00;
+  -webkit-box-shadow: 0px 0px 20px var(--color_4);
+  box-shadow: 0px 0px 20px var(--color_4);
+}
+
+body main .top_section .all_task .todo .main .input_section button:hover:active {
+  scale: 0.9;
+}
+
+body main .top_section .all_task .todo .main .view_section {
+  padding: 40px;
+  margin-top: 30px;
+  background: #222831;
+  border-radius: 40px;
+}
+
+body main .top_section .all_task .todo .main .view_section h2 {
+  font-size: 2rem;
+  color: #EEEEEE;
+}
+
+body main .top_section .all_task .todo .main .view_section .view_task_section {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 20px;
+}
+
+body main .top_section .all_task .todo .main .view_section .view_task_section .task-reader {
+  padding: 15px;
+  gap: 10px;
+  background: #EEEEEE;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+body main .top_section .all_task .todo .main .view_section .view_task_section .task-reader span {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: justify;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 30px;
+}
+
+body main .top_section .all_task .todo .main .view_section .view_task_section .task-reader span h5 {
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
+  width: fit-content;
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+
+body main .top_section .all_task .todo .main .view_section .view_task_section .task-reader span p {
+  text-wrap: wrap;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+body main .top_section .all_task .todo .main .view_section .view_task_section .task-reader button {
+  height: -moz-fit-content;
+  height: -webkit-fit-content;
+  height: fit-content;
+  font-size: 1.2rem;
+  font-weight: 700;
+  background: #EEEEEE;
+  padding: 10px 15px;
+  border-radius: 15px;
+  -webkit-transition: all ease-out 0.1s;
+  -o-transition: all ease-out 0.1s;
+  transition: all ease-out 0.1s;
+  background: #00ff91;
+}
+
+body main .top_section .all_task .todo .main .view_section .view_task_section .task-reader button:hover {
+  outline: none;
+  color: black;
+  background: #00fbff;
+  -webkit-box-shadow: 0px 0px 20px var(--color_4);
+  box-shadow: 0px 0px 20px var(--color_4);
+}
+
+body main .top_section .all_task .todo .main .view_section .view_task_section .task-reader button:hover:active {
+  scale: 0.9;
+}
+
+body main .top_section .all_task .todo .main .view_section .view_task_section .task-reader .imp {
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: -webkit-fit-content;
+  height: fit-content;
+  padding: 10px;
+  font-size: 2rem;
+  border-radius: 10px;
+  border: var(--border);
+  color: white;
+  background: #f51441;
+}
+
+body main .top_section .all_task .planner {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+body main .top_section .all_task .planner .main {
+  width: 100%;
+  height: 80vh;
+  background: var(--color_4);
+  padding: 20px;
+  border-radius: 20px;
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: start;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  overflow: auto;
+}
+
+body main .top_section .all_task .planner .main .hour_planner {
+  margin-bottom: 20px;
+  width: 100%;
+  color: var(--color_3);
+  background: var(--color_1);
+  padding: 10px;
+  position: relative;
+  border-radius: 10px;
+}
+
+body main .top_section .all_task .planner .main .hour_planner p {
+  font-size: 1.2rem;
+  position: absolute;
+  top: 5%;
+  left: 1%;
+}
+
+body main .top_section .all_task .planner .main .hour_planner input {
+  width: 100%;
+  margin-top: 22px;
+  padding: 10px;
+  font-size: 1.7rem;
+  border-radius: 10px;
+  outline: none;
+}
+
+body main .top_section .all_task .motivation {
+  padding: 20px;
+  position: relative;
+  min-height: 100vh;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+body main .top_section .all_task .motivation .main {
+  width: 100%;
+  min-height: 350px;
+  border-radius: 40px;
+  z-index: 2;
+}
+
+body main .top_section .all_task .motivation .main .quete_section {
+  margin-top: 50px;
+  border-radius: 40px;
+  color: var(--color_3);
+  background: var(--color_4);
+  padding: 20px;
+  z-index: 3;
+  -webkit-box-shadow: 20px 20px 50px var(--color_4);
+  box-shadow: 20px 20px 50px var(--color_4);
+}
+
+body main .top_section .all_task .motivation .main .quete_section .motivation_top {
+  display: inline-block;
+  background: var(--color_1);
+  border-radius: 30px;
+  margin-bottom: 30px;
+}
+
+body main .top_section .all_task .motivation .main .quete_section .motivation_top h2 {
+  padding: 10px;
+  text-align: start;
+}
+
+body main .top_section .all_task .motivation .main .quete_section .motivation_main {
+  width: 100%;
+  min-height: 75%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 30px;
+}
+
+body main .top_section .all_task .motivation .main .quete_section .motivation_main h2 {
+  font-size: 1.4rem;
+}
+
+body main .top_section .all_task .motivation .main .quete_section .motivation_main p {
+  font-size: 1.2rem;
+  text-align: end;
+  font-weight: bolder;
+}
+
+body main .top_section .all_task .timer {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+body main .top_section .all_task .timer .main {
+  height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+body main .top_section .all_task .timer .main h2 {
+  font-size: 4rem;
+}
+
+body main .top_section .all_task .timer .main h3 {
+  padding: 7px 10px;
+  font-size: 2.5rem;
+  border-radius: 10px;
+  color: #222831;
+  background: #fffb00;
+  border: var(--border);
+}
+
+body main .top_section .all_task .timer .main .btn {
+  padding-top: 10px;
+}
+
+body main .top_section .all_task .timer .main .btn button {
+  padding: 7px 10px;
+  font-size: 1.5rem;
+  margin-left: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  -webkit-transition: all ease-out 0.3s;
+  -o-transition: all ease-out 0.3s;
+  transition: all ease-out 0.3s;
+  -webkit-box-shadow: 5px 5px 7px var(--color_1);
+  box-shadow: 5px 5px 7px var(--color_1);
+}
+
+body main .top_section .all_task .timer .main .btn button:active {
+  scale: 0.8;
+  -webkit-box-shadow: 0 0 7px var(--color_1);
+  box-shadow: 0 0 7px var(--color_1);
+}
+
+body main .top_section .all_task .timer .main .btn button:hover {
+  color: white;
+  background: black;
+}
+
+body main .top_section .all_task .timer .main .btn .start_btn {
+  background: rgb(106, 255, 47);
+}
+
+body main .top_section .all_task .timer .main .btn .stop_btn {
+  background: rgb(255, 136, 0);
+}
+
+body main .top_section .all_task .timer .main .btn .reset_btn {
+  background: #00fbff;
+}
+
+body main .top_section .all_task .goals {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+body main .top_section .all_task .goals .top h2 {
+  font-size: 2rem;
+}
+
+body main .top_section .all_task .goals .main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  height: 76vh;
+  gap: 30px;
+  min-height: -moz-fit-content;
+  min-height: -webkit-fit-content;
+  min-height: fit-content;
+}
+
+body main .top_section .all_task .goals .main .goal_io,
+body main .top_section .all_task .goals .main .goal_op {
+  min-height: 700px;
+  width: 100%;
+  background: var(--color_4);
+  padding: 30px;
+  margin-top: 30px;
+  border-radius: 20px;
+}
+
+body main .top_section .all_task .goals .main .goal_io {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: start;
+  gap: 30px;
+  position: relative;
+}
+
+body main .top_section .all_task .goals .main .goal_io img {
+  width: 120px;
+  position: absolute;
+}
+
+body main .top_section .all_task .goals .main .goal_io .img_1 {
+  top: 2%;
+  left: 5%;
+}
+
+body main .top_section .all_task .goals .main .goal_io .img_2 {
+  top: 5%;
+  right: 5%;
+}
+
+body main .top_section .all_task .goals .main .goal_io .img_3 {
+  width: 150px;
+  bottom: 5%;
+  left: 5%;
+}
+
+body main .top_section .all_task .goals .main .goal_io .img_4 {
+  width: 200px;
+  bottom: 5%;
+  right: 5%;
+}
+
+body main .top_section .all_task .goals .main .goal_io h3 {
+  font-size: 2rem;
+  color: var(--color_3);
+}
+
+body main .top_section .all_task .goals .main .goal_io input {
+  width: 100%;
+  padding: 7px;
+  font-size: 1.5rem;
+  outline: none;
+}
+
+body main .top_section .all_task .goals .main .goal_io button {
+  padding: 8px 15px;
+  font-size: 1.5rem;
+  border: 2px solid black;
+  outline: none;
+  border-radius: 10px;
+  background: #00ff91;
+  cursor: pointer;
+  -webkit-transition: all ease-out 0.3s;
+  -o-transition: all ease-out 0.3s;
+  transition: all ease-out 0.3s;
+  -webkit-box-shadow: 5px 5px 7px var(--color_1);
+  box-shadow: 5px 5px 7px var(--color_1);
+}
+
+body main .top_section .all_task .goals .main .goal_io button:active {
+  scale: 0.8;
+  -webkit-box-shadow: 0 0 7px var(--color_1);
+  box-shadow: 0 0 7px var(--color_1);
+}
+
+body main .top_section .all_task .goals .main .goal_io button:hover {
+  color: white;
+  background: black;
+}
+
+body main .top_section .all_task .goals .main .goal_op {
+  padding: 15px;
+}
+
+body main .top_section .all_task .goals .main .goal_op .goal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  width: 100%;
+  padding: 10px;
+  color: black;
+  background: white;
+  margin-bottom: 15px;
+  border-radius: 10px;
+}
+
+body main .top_section .all_task .goals .main .goal_op .goal span {
+  margin-left: 20px;
+  height: -moz-fit-content;
+  height: -webkit-fit-content;
+  height: fit-content;
+  font-size: 1.2rem;
+  font-weight: 700;
+  background: #EEEEEE;
+  padding: 10px 15px;
+  border-radius: 15px;
+  -webkit-transition: all ease-out 0.1s;
+  -o-transition: all ease-out 0.1s;
+  transition: all ease-out 0.1s;
+  background: #00ff91;
+}
+
+body main .top_section .all_task .goals .main .goal_op .goal span:hover {
+  outline: none;
+  color: black;
+  background: #00fbff;
+  -webkit-box-shadow: 0px 0px 20px var(--color_4);
+  box-shadow: 0px 0px 20px var(--color_4);
+}
+
+body main .top_section .all_task .goals .main .goal_op .goal span:hover:active {
+  scale: 0.9;
+}
+
+@media (min-width: 600px) {
+  body main .top_section header {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+
+  body main .top_section .all_tasks_viwer {
+    padding-top: 100px;
+  }
+
+  body main .top_section .all_tasks_viwer .tasks_viwer {
+    width: 270px;
+    height: 270px;
+  }
+
+  body main .top_section .all_tasks_viwer .tasks_viwer img {
+    width: 250px;
+    height: 250px;
+  }
+
+  body main .top_section .all_task .task {
+    padding: 20px;
+    padding-top: 100px;
+  }
+
+  body main .top_section .all_task .todo .main {
+    width: 96%;
+    padding: 40px;
+  }
+
+  body main .top_section .all_task .todo .main .input_section {
+    width: 100%;
+    border-radius: 15px;
+  }
+
+  body main .top_section .all_task .todo .main .input_section textarea {
+    font-size: 1.1rem;
+  }
+
+  body main .top_section .all_task .todo .main .input_section button {
+    font-size: 1.3rem;
+  }
+
+  body main .top_section .all_task .todo .main .view_section {
+    width: 100%;
+  }
+
+  body main .top_section .all_task .todo .main .view_section .view_task_section .task-reader {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  body main .top_section .all_task .todo .main .view_section .view_task_section .task-reader span {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+
+  body main .top_section .all_task .planner .main .hour_planner {
+    width: 48%;
+  }
+
+  body main .top_section .all_task .motivation {
+    padding: 10px 20px;
+  }
+
+  body main .top_section .all_task .motivation .main .quete_section {
+    width: 98%;
+  }
+
+  body main .top_section .all_task .timer .main h2 {
+    font-size: 7rem;
+  }
+
+  body main .top_section .all_task .timer .main .btn button {
+    font-size: 2rem;
+    margin-left: 20px;
+    -webkit-box-shadow: 10px 10px 20px var(--color_1);
+    box-shadow: 10px 10px 20px var(--color_1);
+  }
+
+  body main .top_section .all_task .goals .main {
+    padding: 40px;
+  }
+
+  body main .top_section .all_task .goals .main .goal_op {
+    padding: 15px;
+  }
+
+  body main .top_section .all_task .goals .main .goal_op .goal {
+    border-radius: 10px;
+    font-size: 1.6rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  body main .top_section header {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+
+  body main .top_section header .left h1 {
+    font-size: 4rem;
+  }
+
+  body main .top_section header .left h4 {
+    font-size: 2rem;
+  }
+
+  body main .top_section header .right h2 {
+    font-size: 2rem;
+  }
+
+  body main .top_section header .right h3 {
+    font-size: 1.5rem;
+  }
+
+  body main .top_section header .right h4 {
+    font-size: 1.2rem;
+  }
+
+  body main .top_section .all_tasks_viwer {
+    padding: 40px;
+    padding-top: 100px;
+  }
+
+  body main .top_section .all_tasks_viwer .tasks_viwer {
+    width: 290px;
+    height: 290px;
+  }
+
+  body main .top_section .all_tasks_viwer .tasks_viwer img {
+    width: 270px;
+    height: 270px;
+  }
+
+  body main .top_section .all_task .task {
+    padding: 20px;
+    padding-top: 100px;
+  }
+
+  body main .top_section .all_task .todo .main {
+    width: 90%;
+    padding: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  body main .top_section .all_task .todo .main .input_section {
+    width: 80%;
+    border-radius: 40px;
+  }
+
+  body main .top_section .all_task .todo .main .input_section input {
+    font-size: 1.7rem;
+  }
+
+  body main .top_section .all_task .todo .main .input_section textarea {
+    font-size: 1.3rem;
+  }
+
+  body main .top_section .all_task .todo .main .input_section button {
+    font-size: 1.5rem;
+  }
+
+  body main .top_section .all_task .todo .main .view_section .view_task_section .task-reader {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+  body main .top_section .all_task .todo .main .view_section .view_task_section .task-reader span {
+    width: 55%;
+    gap: 20px;
+  }
+
+  body main .top_section .all_task .motivation {
+    padding: 80px;
+    padding-top: 100px;
+  }
+
+  body main .top_section .all_task .motivation .main {
+    width: 70%;
+  }
+
+  body main .top_section .all_task .motivation .main .quete_section .motivation_main h2 {
+    font-size: 2rem;
+    text-align: justify;
+  }
+
+  body main .top_section .all_task .motivation .main .quete_section .motivation_main p {
+    text-align: end;
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+
+  body main .top_section .all_task .motivation .timer .main h2 {
+    font-size: 10rem;
+  }
+
+  body main .top_section .all_task .motivation .timer .main .btn button {
+    font-size: 3rem;
+    margin-left: 30px;
+    -webkit-box-shadow: 10px 10px 20px var(--color_1);
+    box-shadow: 10px 10px 20px var(--color_1);
+  }
+
+  body main .top_section .all_task .goals .main {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+
+  body main .top_section .all_task .goals .main .goal_io,
+  body main .top_section .all_task .goals .main .goal_op {
+    height: 700px;
+    margin-top: 30px;
+  }
+
+  body main .top_section .all_task .goals .main .goal_io {
+    width: 48%;
+  }
+
+  body main .top_section .all_task .goals .main .goal_op {
+    width: 48%;
+  }
+}
+
+@media (min-width: 1024px) and (min-width: 1440px) {
+  body main .top_section .all_tasks_viwer .tasks_viwer {
+    width: 300px;
+    height: 300px;
+  }
+
+  body main .top_section .all_tasks_viwer .tasks_viwer img {
+    width: 300px;
+    height: 300px;
+  }
+
+  body main .top_section .all_task .task {
+    padding: 20px;
+    padding-top: 100px;
+  }
+
+  body main .top_section .all_task .todo .main {
+    width: 80%;
+    padding: 40px;
+  }
+
+  body main .top_section .all_task .todo .main .input_section input {
+    font-size: 2rem;
+  }
+
+  body main .top_section .all_task .todo .main .input_section textarea {
+    font-size: 1.5rem;
+  }
+
+  body main .top_section .all_task .todo .main .input_section button {
+    font-size: 1.7rem;
+  }
+
+  body main .top_section .all_task .todo .main .view_section .view_task_section .task-reader span {
+    width: 70%;
+  }
+
+  body main .top_section .all_task .timer .main h2 {
+    font-size: 13rem;
+  }
+
+  body main .top_section .all_task .timer .main .btn button {
+    font-size: 3rem;
+    margin-left: 35px;
+  }
+}

@@ -1,0 +1,517 @@
+@use "./varible";
+
+@mixin responsive {
+
+    // Tablet
+    @media (min-width: 600px) {
+        body {
+            main {
+                nav {}
+
+                .top_section {
+                    header {
+                        flex-direction: row;
+
+                        .left {
+                            h1 {}
+
+                            h4 {}
+                        }
+
+                        .right {
+                            h2 {}
+
+                            h3 {}
+
+                            h4 {}
+                        }
+                    }
+
+                    .all_tasks_viwer {
+                        // padding: 40px;
+                        padding-top: 100px;
+
+                        .tasks_viwer {
+                            width: 270px;
+                            height: 270px;
+
+                            img {
+                                width: 250px;
+                                height: 250px;
+                            }
+
+                        }
+
+                    }
+
+                    .all_task {
+
+                        .task {
+
+                            padding: 20px;
+                            padding-top: 100px;
+
+
+                            .top {
+                                h2 {}
+
+                                button {
+                                    span {}
+                                }
+                            }
+                        }
+
+
+                        .todo {
+                            .main {
+                                width: 96%;
+                                padding: 40px;
+
+                                .input_section {
+                                    width: 100%;
+                                    border-radius: 15px;
+
+                                    textarea {
+                                        font-size: 1.1rem;
+                                    }
+
+                                    button {
+                                        font-size: 1.3rem;
+                                    }
+                                }
+
+                                .view_section {
+                                    width: 100%;
+
+                                    .view_task_section {
+
+                                        .task-reader {
+                                            justify-content: center;
+
+                                            span {
+                                                flex-direction: row;
+                                                // align-items: center;
+
+
+
+                                                h5 {}
+
+                                                p {}
+                                            }
+
+                                            button {}
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .planner {
+                            .main {
+                                .hour_planner {
+                                    width: 48%;
+                                }
+                            }
+                        }
+
+                        .motivation {
+                            padding: 10px 20px;
+                            // margin: 20px;
+
+                            .main {
+                                .quete_section {
+                                    width: 98%;
+
+                                    h2 {}
+
+                                    p {}
+                                }
+                            }
+                        }
+
+                        .timer {
+                            .main {
+                                h2 {
+                                    font-size: 7rem;
+                                }
+
+                                .btn {
+                                    button {
+                                        font-size: 2rem;
+                                        margin-left: 20px;
+                                        box-shadow: 10px 10px 20px var(--color_1);
+                                    }
+                                }
+                            }
+                        }
+
+                        .goals {
+                            .main {
+                                padding: 40px;
+
+                                .goal_io {
+                                    input {}
+
+                                    button {}
+                                }
+
+                                .goal_op {
+                                    padding: 15px;
+
+                                    .goal {
+                                        border-radius: 10px;
+                                        font-size: 1.6rem;
+                                    }
+                                }
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // tablet & small laptop
+    @media (min-width: 1024px) {
+        body {
+            main {
+                nav {}
+
+                .top_section {
+                    header {
+                        flex-direction: row;
+
+                        .left {
+                            h1 {
+                                font-size: 4rem;
+                            }
+
+                            h4 {
+                                font-size: 2rem;
+                            }
+                        }
+
+                        .right {
+                            h2 {
+                                font-size: 2rem;
+                            }
+
+                            h3 {
+                                font-size: 1.5rem;
+                            }
+
+                            h4 {
+                                font-size: 1.2rem;
+                            }
+                        }
+                    }
+
+                    .all_tasks_viwer {
+                        padding: 40px;
+                        padding-top: 100px;
+
+                        .tasks_viwer {
+                            width: 290px;
+                            height: 290px;
+
+                            img {
+                                width: 270px;
+                                height: 270px;
+                            }
+
+                            h2 {}
+
+                        }
+
+                    }
+
+                    .all_task {
+
+                        .task {
+
+                            padding: 20px;
+                            padding-top: 100px;
+
+
+                            .top {
+                                h2 {}
+
+                                button {
+                                    span {}
+                                }
+                            }
+                        }
+
+
+                        .todo {
+                            .main {
+                                width: 90%;
+                                padding: 40px;
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+
+                                .input_section {
+                                    width: 80%;
+                                    border-radius: 40px;
+
+                                    input {
+                                        font-size: 1.7rem;
+                                    }
+
+                                    textarea {
+                                        font-size: 1.3rem;
+                                    }
+
+                                    button {
+                                        font-size: 1.5rem;
+                                    }
+                                }
+
+                                .view_section {
+
+                                    .view_task_section {
+                                        .task-reader {
+                                            justify-content: space-between;
+
+                                            span {
+                                                width: 55%;
+                                                gap: 20px;
+
+                                                h5 {}
+
+                                                p {}
+                                            }
+
+                                            button {}
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .planner {
+                            .main {
+                                .hour_planner {}
+                            }
+                        }
+
+                        .motivation {
+                            padding: 80px;
+                            padding-top: 100px;
+
+                            .main {
+                                width: 70%;
+
+                                .quete_section {
+                                    .motivation_top {}
+
+                                    .motivation_main {
+
+                                        h2 {
+                                            font-size: 2rem;
+                                            text-align: justify;
+                                        }
+
+                                        p {
+                                            text-align: end;
+                                            font-size: 1.5rem;
+                                            font-weight: 500;
+
+                                        }
+                                    }
+                                }
+                            }
+
+                            .timer {
+                                .main {
+                                    h2 {
+                                        font-size: 10rem;
+                                    }
+
+                                    .btn {
+                                        button {
+                                            font-size: 3rem;
+                                            margin-left: 30px;
+                                            box-shadow: 10px 10px 20px var(--color_1);
+                                        }
+                                    }
+                                }
+                            }
+
+                            .goals {}
+                        }
+
+                        .goals {
+
+                            .main {
+                                flex-direction: row;
+
+                                .goal_io,
+                                .goal_op {
+                                    height: 700px;
+                                    margin-top: 30px;
+                                    // border-radius: 30px;
+
+                                }
+
+                                .goal_io {
+                                    width: 48%;
+
+
+                                    input {}
+
+                                    button {}
+                                }
+
+                                .goal_op {
+                                    width: 48%;
+                                }
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        // Desktop
+        @media (min-width: 1440px) {
+            body {
+                main {
+                    nav {}
+
+                    .top_section {
+                        header {
+                            .left {
+                                h1 {}
+
+                                h4 {}
+                            }
+
+                            .right {
+                                h2 {}
+
+                                h3 {}
+
+                                h4 {}
+                            }
+                        }
+
+                        .all_tasks_viwer {
+                            .tasks_viwer {
+                                width: 300px;
+                                height: 300px;
+
+                                img {
+                                    width: 300px;
+                                    height: 300px;
+                                }
+
+                                h2 {}
+
+                            }
+
+                        }
+
+                        .all_task {
+
+                            .task {
+
+                                padding: 20px;
+                                padding-top: 100px;
+
+
+                                .top {
+                                    h2 {}
+
+                                    button {
+                                        span {}
+                                    }
+                                }
+                            }
+
+                            .todo {
+                                .main {
+                                    width: 80%;
+                                    padding: 40px;
+
+                                    .input_section {
+
+                                        input {
+                                            font-size: 2rem;
+                                        }
+
+                                        textarea {
+                                            font-size: 1.5rem;
+                                        }
+
+                                        button {
+                                            font-size: 1.7rem;
+                                        }
+                                    }
+
+                                    .view_section {
+
+                                        .view_task_section {
+                                            .task-reader {
+                                                span {
+                                                    width: 70%;
+
+                                                    h5 {}
+
+                                                    p {}
+                                                }
+
+                                                button {}
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            .planner {}
+
+                            .motivation {
+                                h2 {}
+
+                                p {}
+                            }
+
+                            .timer {
+                                .main {
+                                    h2 {
+                                        font-size: 13rem;
+                                    }
+
+                                    .btn {
+                                        button {
+                                            font-size: 3rem;
+                                            margin-left: 35px;
+                                        }
+                                    }
+                                }
+                            }
+
+                            .goals {
+                                .main {
+
+                                    .goal_io {
+
+                                        input {}
+
+                                        button {}
+                                    }
+
+                                    .goal_op {}
+
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
